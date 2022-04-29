@@ -1,0 +1,16 @@
+#+TITLE: Physics Formulas
+#+OPTIONS: toc:nil
+
+
+
+* Welcome!
+
+This is the homepage to the notes I created for Physics.
+
+** Year 3
+
+- [[file:qm.html][PHAS0042 Quantum Mechanics]]
+- [[file:sp.html][PHAS0041 Solid State Physics]]
+- [[file:em.html][PHAS0038 Electromagnetic Theory]]
+- [[file:pp.html][PHAS0040 Nuclear and Particle Physics]]
+- [[file:gr.html][MATH0025 General Relativity]]
