@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-27 Wed 11:33 -->
+<!-- 2022-04-30 Sat 13:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Important formulas</title>
@@ -256,46 +256,53 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org54c70ff">1. Magnetostatics</a>
+<li><a href="#orga564498">1. Electrostatics</a>
 <ul>
-<li><a href="#orga70ccf5">1.1. Current</a>
-<ul>
-<li><a href="#org442a2e2">1.1.1. Surface Current (K)</a></li>
-<li><a href="#org3ac3e65">1.1.2. Volume Current (J)</a></li>
+<li><a href="#org7ceadf8">1.1. Potential in terms of Dipole Moment</a></li>
+<li><a href="#org4ff0e8c">1.2. Dipole Moment</a></li>
 </ul>
 </li>
-<li><a href="#org821a576">1.2. Magnetic Potential</a>
+<li><a href="#orge2427d1">2. Magnetostatics</a>
 <ul>
-<li><a href="#org210ed50">1.2.1. Vector Potential</a></li>
-<li><a href="#org2288ef4">1.2.2. Poisson Equation and Formulation</a></li>
+<li><a href="#org9c1cef9">2.1. Current</a>
+<ul>
+<li><a href="#org811706d">2.1.1. Surface Current (K)</a></li>
+<li><a href="#orgd437360">2.1.2. Volume Current (J)</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#orge6b3727">2. Electric Fields in Matter</a>
+<li><a href="#orgad43060">2.2. Magnetic Potential</a>
 <ul>
-<li><a href="#orgf8da5b8">2.1. Volume and Surface Bound Charges</a></li>
-<li><a href="#orgc44671d">2.2. Electric Displacement</a></li>
-<li><a href="#org4bbe1f4">2.3. Polarization</a></li>
-</ul>
-</li>
-<li><a href="#orgc5fb6af">3. Magnetic Fields in Matter</a>
-<ul>
-<li><a href="#orgecb896a">3.1. Volume and Surface Currents</a></li>
-<li><a href="#org25420f6">3.2. Ampere's Law in Matter</a></li>
-<li><a href="#org2dd27a0">3.3. Examples</a>
-<ul>
-<li><a href="#org4323851">3.3.1. Field of Uniformly Magnetized Sphere</a></li>
+<li><a href="#org8f2d5f1">2.2.1. Vector Potential</a></li>
+<li><a href="#orgcde7edf">2.2.2. Poisson Equation and Formulation</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org7f9a739">4. Refraction and Reflection</a>
+<li><a href="#org0c4d3a1">3. Electric Fields in Matter</a>
 <ul>
-<li><a href="#org1dc3c2c">4.1. Brewster's Angle</a></li>
-<li><a href="#org7f64b5c">4.2. Refractive Index</a></li>
-<li><a href="#org9e24368">4.3. Fresnel Equations</a></li>
-<li><a href="#orgfb93edf">4.4. Relating E field and B field for plane waves</a></li>
+<li><a href="#orgcac3be0">3.1. Volume and Surface Bound Charges</a></li>
+<li><a href="#org03b894f">3.2. Electric Displacement</a></li>
+<li><a href="#org89f0ab3">3.3. Polarization</a></li>
+</ul>
+</li>
+<li><a href="#orgacab524">4. Magnetic Fields in Matter</a>
+<ul>
+<li><a href="#org15b83fb">4.1. Volume and Surface Currents</a></li>
+<li><a href="#orgdf37b3f">4.2. Ampere's Law in Matter</a></li>
+<li><a href="#org98a34b6">4.3. Examples</a>
+<ul>
+<li><a href="#orgcd01548">4.3.1. Field of Uniformly Magnetized Sphere</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org87c9c56">5. Eletromagnetic Waves</a>
+<ul>
+<li><a href="#org127eee9">5.1. Brewster's Angle</a></li>
+<li><a href="#org2d44266">5.2. Refractive Index</a></li>
+<li><a href="#orga4e3bfe">5.3. Velocities</a></li>
+<li><a href="#orgd49150d">5.4. Fresnel Equations</a></li>
+<li><a href="#orgde8d4e3">5.5. Relating E field and B field for plane waves</a></li>
 </ul>
 </li>
 </ul>
@@ -303,27 +310,52 @@ for the JavaScript code in this tag.
 </div>
 
 
-
-<div id="outline-container-org54c70ff" class="outline-2">
-<h2 id="org54c70ff"><span class="section-number-2">1</span> Magnetostatics</h2>
+<div id="outline-container-orga564498" class="outline-2">
+<h2 id="orga564498"><span class="section-number-2">1</span> Electrostatics</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orga70ccf5" class="outline-3">
-<h3 id="orga70ccf5"><span class="section-number-3">1.1</span> Current</h3>
+<div id="outline-container-org7ceadf8" class="outline-3">
+<h3 id="org7ceadf8"><span class="section-number-3">1.1</span> Potential in terms of Dipole Moment</h3>
 <div class="outline-text-3" id="text-1-1">
+<p>
+The vector can be rewritten as:
+\[ V = \frac{\mathbf{\hat{p}}\cdot\mathbf{\hat{r}}}{4\pi\epsilon_0 r^2}\]
+</p>
 </div>
-<div id="outline-container-org442a2e2" class="outline-4">
-<h4 id="org442a2e2"><span class="section-number-4">1.1.1</span> Surface Current (K)</h4>
-<div class="outline-text-4" id="text-1-1-1">
+</div>
+
+<div id="outline-container-org4ff0e8c" class="outline-3">
+<h3 id="org4ff0e8c"><span class="section-number-3">1.2</span> Dipole Moment</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+D.M. of a collection of point charges is given by:
+\[mathbf{p} = \sum_{i=1}^n q_i \mathbf{r}'_i\]
+where \(r')\ is the distance from the origin.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge2427d1" class="outline-2">
+<h2 id="orge2427d1"><span class="section-number-2">2</span> Magnetostatics</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org9c1cef9" class="outline-3">
+<h3 id="org9c1cef9"><span class="section-number-3">2.1</span> Current</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org811706d" class="outline-4">
+<h4 id="org811706d"><span class="section-number-4">2.1.1</span> Surface Current (K)</h4>
+<div class="outline-text-4" id="text-2-1-1">
 <p>
 \[ \mathbf{K} = \frac{d\mathbf{I}}{dl_\perp} \qquad \mathbf{K} = \sigma \mathbf{v} \]
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3ac3e65" class="outline-4">
-<h4 id="org3ac3e65"><span class="section-number-4">1.1.2</span> Volume Current (J)</h4>
-<div class="outline-text-4" id="text-1-1-2">
+<div id="outline-container-orgd437360" class="outline-4">
+<h4 id="orgd437360"><span class="section-number-4">2.1.2</span> Volume Current (J)</h4>
+<div class="outline-text-4" id="text-2-1-2">
 <p>
 \[ \mathbf{J} = \frac{d\mathbf{I}}{da_\perp} \qquad \mathbf{J} = \rho\mathbf{v} \]
 </p>
@@ -331,25 +363,25 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org821a576" class="outline-3">
-<h3 id="org821a576"><span class="section-number-3">1.2</span> Magnetic Potential</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgad43060" class="outline-3">
+<h3 id="orgad43060"><span class="section-number-3">2.2</span> Magnetic Potential</h3>
+<div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org210ed50" class="outline-4">
-<h4 id="org210ed50"><span class="section-number-4">1.2.1</span> Vector Potential</h4>
-<div class="outline-text-4" id="text-1-2-1">
+<div id="outline-container-org8f2d5f1" class="outline-4">
+<h4 id="org8f2d5f1"><span class="section-number-4">2.2.1</span> Vector Potential</h4>
+<div class="outline-text-4" id="text-2-2-1">
 <p>
 \[ \nabla \times \mathbf{A}  = \mathbf{B} \]
 </p>
 </div>
 </div>
 
-<div id="outline-container-org2288ef4" class="outline-4">
-<h4 id="org2288ef4"><span class="section-number-4">1.2.2</span> Poisson Equation and Formulation</h4>
-<div class="outline-text-4" id="text-1-2-2">
+<div id="outline-container-orgcde7edf" class="outline-4">
+<h4 id="orgcde7edf"><span class="section-number-4">2.2.2</span> Poisson Equation and Formulation</h4>
+<div class="outline-text-4" id="text-2-2-2">
 \begin{align*}
 \nabla^2\mathbf{A} &= -\mu_0 \mathbf{J}\\
-\mathbf{A(r)} = \frac{\mu_0}{4\pi}\int \frac{\mathbf{J(r')}}{\mathit{r}}d\tau'
+\mathbf{A(r)} &= \frac{\mu_0}{4\pi}\int \frac{\mathbf{J(r')}}{\mathit{r}}d\tau'
 \end{align*}
 </div>
 </div>
@@ -357,22 +389,22 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orge6b3727" class="outline-2">
-<h2 id="orge6b3727"><span class="section-number-2">2</span> Electric Fields in Matter</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org0c4d3a1" class="outline-2">
+<h2 id="org0c4d3a1"><span class="section-number-2">3</span> Electric Fields in Matter</h2>
+<div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgf8da5b8" class="outline-3">
-<h3 id="orgf8da5b8"><span class="section-number-3">2.1</span> Volume and Surface Bound Charges</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-orgcac3be0" class="outline-3">
+<h3 id="orgcac3be0"><span class="section-number-3">3.1</span> Volume and Surface Bound Charges</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
 \[ \mathbf{\rho_b} =-\nabla\cdot\mathbf{P} \qquad \mathbf{\sigma_b} = \mathbf{P}\cdot\mathbf{\hat{n}}\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc44671d" class="outline-3">
-<h3 id="orgc44671d"><span class="section-number-3">2.2</span> Electric Displacement</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org03b894f" class="outline-3">
+<h3 id="org03b894f"><span class="section-number-3">3.2</span> Electric Displacement</h3>
+<div class="outline-text-3" id="text-3-2">
 \begin{align*}
 \nabla \cdot \mathbf{D} &= \rho \\
 \oint \mathbf{D}\cdot d\mathbf{a} &= Q_\text{fenc}\\
@@ -382,9 +414,9 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 
 
-<div id="outline-container-org4bbe1f4" class="outline-3">
-<h3 id="org4bbe1f4"><span class="section-number-3">2.3</span> Polarization</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-org89f0ab3" class="outline-3">
+<h3 id="org89f0ab3"><span class="section-number-3">3.3</span> Polarization</h3>
+<div class="outline-text-3" id="text-3-3">
 <p>
 \[ \mathbf{P} = \epsilon_0\chi_e\mathbf{E}\]
 </p>
@@ -392,37 +424,37 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 </div>
 
-<div id="outline-container-orgc5fb6af" class="outline-2">
-<h2 id="orgc5fb6af"><span class="section-number-2">3</span> Magnetic Fields in Matter</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orgacab524" class="outline-2">
+<h2 id="orgacab524"><span class="section-number-2">4</span> Magnetic Fields in Matter</h2>
+<div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgecb896a" class="outline-3">
-<h3 id="orgecb896a"><span class="section-number-3">3.1</span> Volume and Surface Currents</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org15b83fb" class="outline-3">
+<h3 id="org15b83fb"><span class="section-number-3">4.1</span> Volume and Surface Currents</h3>
+<div class="outline-text-3" id="text-4-1">
 <p>
 \[ \mathbf{J_b} = \nabla\times\mathbf{M} \qquad \mathbf{K_b} = \mathbf{M} \times \mathbf{\hat{n}}\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-org25420f6" class="outline-3">
-<h3 id="org25420f6"><span class="section-number-3">3.2</span> Ampere's Law in Matter</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-orgdf37b3f" class="outline-3">
+<h3 id="orgdf37b3f"><span class="section-number-3">4.2</span> Ampere's Law in Matter</h3>
+<div class="outline-text-3" id="text-4-2">
 \begin{align*}
 \nabla\times\mathbf{H} &= \mathbf{J_f}\\
-\oint \mathbf{H} \cdot d\mathbf{I} = I_\text{fenc}\\
-\mathbf{H} \equiv \frac{1}{\mu_0}\mathbf{B} - \mathbf{M}
+\oint \mathbf{H} \cdot d\mathbf{I} &= I_\text{fenc}\\
+\mathbf{H} &\equiv \frac{1}{\mu_0}\mathbf{B} - \mathbf{M}
 \end{align*}
 </div>
 </div>
 
-<div id="outline-container-org2dd27a0" class="outline-3">
-<h3 id="org2dd27a0"><span class="section-number-3">3.3</span> Examples</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org98a34b6" class="outline-3">
+<h3 id="org98a34b6"><span class="section-number-3">4.3</span> Examples</h3>
+<div class="outline-text-3" id="text-4-3">
 </div>
-<div id="outline-container-org4323851" class="outline-4">
-<h4 id="org4323851"><span class="section-number-4">3.3.1</span> Field of Uniformly Magnetized Sphere</h4>
-<div class="outline-text-4" id="text-3-3-1">
+<div id="outline-container-orgcd01548" class="outline-4">
+<h4 id="orgcd01548"><span class="section-number-4">4.3.1</span> Field of Uniformly Magnetized Sphere</h4>
+<div class="outline-text-4" id="text-4-3-1">
 <p>
 \[ \mathbf{B} = \frac23\mu_0\mathbf{M} \]
 </p>
@@ -432,13 +464,13 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 
 
-<div id="outline-container-org7f9a739" class="outline-2">
-<h2 id="org7f9a739"><span class="section-number-2">4</span> Refraction and Reflection</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-org87c9c56" class="outline-2">
+<h2 id="org87c9c56"><span class="section-number-2">5</span> Eletromagnetic Waves</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org1dc3c2c" class="outline-3">
-<h3 id="org1dc3c2c"><span class="section-number-3">4.1</span> Brewster's Angle</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-org127eee9" class="outline-3">
+<h3 id="org127eee9"><span class="section-number-3">5.1</span> Brewster's Angle</h3>
+<div class="outline-text-3" id="text-5-1">
 <p>
 When \( r_\| = 0\) and \(r_\perp \neq 0\):
 \[ \alpha_B = tan^{-1}\left(\frac{n'}{n}\right)\]
@@ -448,37 +480,55 @@ The transmitted ray angle would be:
 </div>
 </div>
 
-<div id="outline-container-org7f64b5c" class="outline-3">
-<h3 id="org7f64b5c"><span class="section-number-3">4.2</span> Refractive Index</h3>
-<div class="outline-text-3" id="text-4-2">
+<div id="outline-container-org2d44266" class="outline-3">
+<h3 id="org2d44266"><span class="section-number-3">5.2</span> Refractive Index</h3>
+<div class="outline-text-3" id="text-5-2">
 <p>
 \[ n = \frac{ck}{\omega}\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-org9e24368" class="outline-3">
-<h3 id="org9e24368"><span class="section-number-3">4.3</span> Fresnel Equations</h3>
-<div class="outline-text-3" id="text-4-3">
+<div id="outline-container-orga4e3bfe" class="outline-3">
+<h3 id="orga4e3bfe"><span class="section-number-3">5.3</span> Velocities</h3>
+<div class="outline-text-3" id="text-5-3">
 <p>
-Usually deal with materials where \(\mu_r = 1\]\), so:
+Phase velocity:
+\[ v_p = \frac{\omega}{k} = \frac{c}{n}\]
+For complex refractive index consider only the <b>real</b> part.
+</p>
+
+<p>
+Group velocity:
+\[ v_g = \frac{d\omega}{dk}\]
+Energy travels at group velocity so phase velocity <b>can</b> be faster than light. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd49150d" class="outline-3">
+<h3 id="orgd49150d"><span class="section-number-3">5.4</span> Fresnel Equations</h3>
+<div class="outline-text-3" id="text-5-4">
+<p>
+Usually deal with materials where \(\mu_r = 1\), so:
 \[ n = \sqrt{\frac{\epsilon\mu}{\epsilon_0\mu_0}} = \sqrt{\epsilon_r}\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgfb93edf" class="outline-3">
-<h3 id="orgfb93edf"><span class="section-number-3">4.4</span> Relating E field and B field for plane waves</h3>
-<div class="outline-text-3" id="text-4-4">
+<div id="outline-container-orgde8d4e3" class="outline-3">
+<h3 id="orgde8d4e3"><span class="section-number-3">5.5</span> Relating E field and B field for plane waves</h3>
+<div class="outline-text-3" id="text-5-5">
 <p>
-\[ \mathbf{\hat{B}} = \frac{1}{\omega} \mathbf{k}\times\mathbf{\hat{E}}\]</p>
+\[ \mathbf{\hat{B}} = \frac{1}{\omega} \mathbf{k}\times\mathbf{\hat{E}}\]
+</p>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kelvin</p>
-<p class="date">Created: 2022-04-27 Wed 11:33</p>
+<p class="date">Created: 2022-04-30 Sat 13:07</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
