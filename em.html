@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-04-30 Sat 13:13 -->
+<!-- 2022-05-03 Tue 00:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Important formulas</title>
@@ -256,66 +256,78 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org44b18ce">1. Electrostatics</a>
+<li><a href="#orgbee4309">1. Electrostatics</a>
 <ul>
-<li><a href="#org83d8854">1.1. Potential in terms of Dipole Moment</a></li>
-<li><a href="#org7a2cdf7">1.2. Dipole Moment</a></li>
+<li><a href="#orgc3f056f">1.1. Potential in terms of Dipole Moment</a></li>
+<li><a href="#org216e04d">1.2. Dipole Moment</a></li>
 </ul>
 </li>
-<li><a href="#orgbc6c81a">2. Magnetostatics</a>
+<li><a href="#org8a0354b">2. Magnetostatics</a>
 <ul>
-<li><a href="#orgb9e8d88">2.1. Current</a>
+<li><a href="#orge1569d8">2.1. Current</a>
 <ul>
-<li><a href="#org160daf7">2.1.1. Surface Current (K)</a></li>
-<li><a href="#orga7feee9">2.1.2. Volume Current (J)</a></li>
+<li><a href="#org2e7a177">2.1.1. Surface Current (K)</a></li>
+<li><a href="#org89c24ab">2.1.2. Volume Current (J)</a></li>
 </ul>
 </li>
-<li><a href="#orgdeddbf6">2.2. Magnetic Potential</a>
+<li><a href="#org9dc30ec">2.2. Magnetic Potential</a>
 <ul>
-<li><a href="#org75d60b5">2.2.1. Vector Potential</a></li>
-<li><a href="#org8c75b38">2.2.2. Poisson Equation and Formulation</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orge518940">3. Electric Fields in Matter</a>
-<ul>
-<li><a href="#orgbe06ec5">3.1. Volume and Surface Bound Charges</a></li>
-<li><a href="#org1606879">3.2. Electric Displacement</a></li>
-<li><a href="#org44f5f35">3.3. Polarization</a></li>
-</ul>
-</li>
-<li><a href="#org548f07d">4. Magnetic Fields in Matter</a>
-<ul>
-<li><a href="#orgb94e0e2">4.1. Volume and Surface Currents</a></li>
-<li><a href="#orgad23c5e">4.2. Ampere's Law in Matter</a></li>
-<li><a href="#org6325944">4.3. Examples</a>
-<ul>
-<li><a href="#orga19449c">4.3.1. Field of Uniformly Magnetized Sphere</a></li>
+<li><a href="#org651644e">2.2.1. Vector Potential</a></li>
+<li><a href="#org0295beb">2.2.2. Poisson Equation and Formulation</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgf8567ad">5. Eletromagnetic Waves</a>
+<li><a href="#org52baa09">3. Electric Fields in Matter</a>
 <ul>
-<li><a href="#orgdc0ec69">5.1. Brewster's Angle</a></li>
-<li><a href="#org1925fe2">5.2. Refractive Index</a></li>
-<li><a href="#org9cacbd7">5.3. Velocities</a></li>
-<li><a href="#orgf7abc93">5.4. Fresnel Equations</a></li>
-<li><a href="#org0d53b20">5.5. Relating E field and B field for plane waves</a></li>
+<li><a href="#org9a7cbd6">3.1. Volume and Surface Bound Charges</a></li>
+<li><a href="#orgbdf4a72">3.2. Electric Displacement</a></li>
+<li><a href="#org9e5d6f6">3.3. Polarization</a></li>
+</ul>
+</li>
+<li><a href="#org7b04fdd">4. Magnetic Fields in Matter</a>
+<ul>
+<li><a href="#org2740221">4.1. Volume and Surface Currents</a></li>
+<li><a href="#org24cdc93">4.2. Ampere's Law in Matter</a></li>
+<li><a href="#orgd284401">4.3. Examples</a>
+<ul>
+<li><a href="#org0cf3b4f">4.3.1. Field of Uniformly Magnetized Sphere</a></li>
+</ul>
+</li>
+<li><a href="#org840b2a6">4.4. Magnetisation</a></li>
+</ul>
+</li>
+<li><a href="#org9ef6203">5. Boundary Conditions</a></li>
+<li><a href="#org148d7be">6. Eletromagnetic Waves</a>
+<ul>
+<li><a href="#orgb48ef3f">6.1. Brewster's Angle</a></li>
+<li><a href="#orga1cc002">6.2. Refractive Index</a></li>
+<li><a href="#org9729405">6.3. Wavevector</a></li>
+<li><a href="#org6e72249">6.4. Velocities</a></li>
+<li><a href="#org487ccf9">6.5. Fresnel Equations</a></li>
+<li><a href="#orgf4caaf2">6.6. Relating E field and B field for plane waves</a></li>
+<li><a href="#org1b64f22">6.7. Pressure</a></li>
+</ul>
+</li>
+<li><a href="#org89ad13a">7. Plasma Physics</a>
+<ul>
+<li><a href="#org26b4c9d">7.1. Definition</a></li>
+<li><a href="#org7545614">7.2. Useful equations</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
+<p>
+I will preface this by saying that the last four pages of Griffith's have basically most of the important formula's for EM (like Maxwell's Equations in vacuum and in matter and coordinate derivatives and transformations), albeit in what might be different notations. The formulas included here are just those which are not in those pages, or are important for the course which may or may not be covered in the book (looking at you Plasma Physics). 
+</p>
 
-
-<div id="outline-container-org44b18ce" class="outline-2">
-<h2 id="org44b18ce"><span class="section-number-2">1</span> Electrostatics</h2>
+<div id="outline-container-orgbee4309" class="outline-2">
+<h2 id="orgbee4309"><span class="section-number-2">1</span> Electrostatics</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org83d8854" class="outline-3">
-<h3 id="org83d8854"><span class="section-number-3">1.1</span> Potential in terms of Dipole Moment</h3>
+<div id="outline-container-orgc3f056f" class="outline-3">
+<h3 id="orgc3f056f"><span class="section-number-3">1.1</span> Potential in terms of Dipole Moment</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The vector can be rewritten as:
@@ -324,8 +336,8 @@ The vector can be rewritten as:
 </div>
 </div>
 
-<div id="outline-container-org7a2cdf7" class="outline-3">
-<h3 id="org7a2cdf7"><span class="section-number-3">1.2</span> Dipole Moment</h3>
+<div id="outline-container-org216e04d" class="outline-3">
+<h3 id="org216e04d"><span class="section-number-3">1.2</span> Dipole Moment</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 D.M. of a collection of point charges is given by:
@@ -336,16 +348,16 @@ where \(r')\ is the distance from the origin.
 </div>
 </div>
 
-<div id="outline-container-orgbc6c81a" class="outline-2">
-<h2 id="orgbc6c81a"><span class="section-number-2">2</span> Magnetostatics</h2>
+<div id="outline-container-org8a0354b" class="outline-2">
+<h2 id="org8a0354b"><span class="section-number-2">2</span> Magnetostatics</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgb9e8d88" class="outline-3">
-<h3 id="orgb9e8d88"><span class="section-number-3">2.1</span> Current</h3>
+<div id="outline-container-orge1569d8" class="outline-3">
+<h3 id="orge1569d8"><span class="section-number-3">2.1</span> Current</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-org160daf7" class="outline-4">
-<h4 id="org160daf7"><span class="section-number-4">2.1.1</span> Surface Current (K)</h4>
+<div id="outline-container-org2e7a177" class="outline-4">
+<h4 id="org2e7a177"><span class="section-number-4">2.1.1</span> Surface Current (K)</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 \[ \mathbf{K} = \frac{d\mathbf{I}}{dl_\perp} \qquad \mathbf{K} = \sigma \mathbf{v} \]
@@ -353,8 +365,8 @@ where \(r')\ is the distance from the origin.
 </div>
 </div>
 
-<div id="outline-container-orga7feee9" class="outline-4">
-<h4 id="orga7feee9"><span class="section-number-4">2.1.2</span> Volume Current (J)</h4>
+<div id="outline-container-org89c24ab" class="outline-4">
+<h4 id="org89c24ab"><span class="section-number-4">2.1.2</span> Volume Current (J)</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 \[ \mathbf{J} = \frac{d\mathbf{I}}{da_\perp} \qquad \mathbf{J} = \rho\mathbf{v} \]
@@ -363,12 +375,12 @@ where \(r')\ is the distance from the origin.
 </div>
 </div>
 
-<div id="outline-container-orgdeddbf6" class="outline-3">
-<h3 id="orgdeddbf6"><span class="section-number-3">2.2</span> Magnetic Potential</h3>
+<div id="outline-container-org9dc30ec" class="outline-3">
+<h3 id="org9dc30ec"><span class="section-number-3">2.2</span> Magnetic Potential</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org75d60b5" class="outline-4">
-<h4 id="org75d60b5"><span class="section-number-4">2.2.1</span> Vector Potential</h4>
+<div id="outline-container-org651644e" class="outline-4">
+<h4 id="org651644e"><span class="section-number-4">2.2.1</span> Vector Potential</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 \[ \nabla \times \mathbf{A}  = \mathbf{B} \]
@@ -376,8 +388,8 @@ where \(r')\ is the distance from the origin.
 </div>
 </div>
 
-<div id="outline-container-org8c75b38" class="outline-4">
-<h4 id="org8c75b38"><span class="section-number-4">2.2.2</span> Poisson Equation and Formulation</h4>
+<div id="outline-container-org0295beb" class="outline-4">
+<h4 id="org0295beb"><span class="section-number-4">2.2.2</span> Poisson Equation and Formulation</h4>
 <div class="outline-text-4" id="text-2-2-2">
 \begin{align*}
 \nabla^2\mathbf{A} &= -\mu_0 \mathbf{J}\\
@@ -389,12 +401,12 @@ where \(r')\ is the distance from the origin.
 </div>
 
 
-<div id="outline-container-orge518940" class="outline-2">
-<h2 id="orge518940"><span class="section-number-2">3</span> Electric Fields in Matter</h2>
+<div id="outline-container-org52baa09" class="outline-2">
+<h2 id="org52baa09"><span class="section-number-2">3</span> Electric Fields in Matter</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgbe06ec5" class="outline-3">
-<h3 id="orgbe06ec5"><span class="section-number-3">3.1</span> Volume and Surface Bound Charges</h3>
+<div id="outline-container-org9a7cbd6" class="outline-3">
+<h3 id="org9a7cbd6"><span class="section-number-3">3.1</span> Volume and Surface Bound Charges</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 \[ \mathbf{\rho_b} =-\nabla\cdot\mathbf{P} \qquad \mathbf{\sigma_b} = \mathbf{P}\cdot\mathbf{\hat{n}}\]
@@ -402,8 +414,8 @@ where \(r')\ is the distance from the origin.
 </div>
 </div>
 
-<div id="outline-container-org1606879" class="outline-3">
-<h3 id="org1606879"><span class="section-number-3">3.2</span> Electric Displacement</h3>
+<div id="outline-container-orgbdf4a72" class="outline-3">
+<h3 id="orgbdf4a72"><span class="section-number-3">3.2</span> Electric Displacement</h3>
 <div class="outline-text-3" id="text-3-2">
 \begin{align*}
 \nabla \cdot \mathbf{D} &= \rho \\
@@ -414,22 +426,30 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 
 
-<div id="outline-container-org44f5f35" class="outline-3">
-<h3 id="org44f5f35"><span class="section-number-3">3.3</span> Polarization</h3>
+<div id="outline-container-org9e5d6f6" class="outline-3">
+<h3 id="org9e5d6f6"><span class="section-number-3">3.3</span> Polarization</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
+For <b>linear dielectrics</b>: 
 \[ \mathbf{P} = \epsilon_0\chi_e\mathbf{E}\]
+where \(\chi_e\) is the <b>electric susceptibility</b>.
+</p>
+
+<p>
+Additionally, substituting this into the definition for electric displacement gives:
+\[ \mathbf{D} = \epsilon\mathbf{E} = \epsilon_0\epsilon_r \mathbf{E} = \epsilon_0(1+\chi_e)\mathbf{E}\]
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org548f07d" class="outline-2">
-<h2 id="org548f07d"><span class="section-number-2">4</span> Magnetic Fields in Matter</h2>
+
+<div id="outline-container-org7b04fdd" class="outline-2">
+<h2 id="org7b04fdd"><span class="section-number-2">4</span> Magnetic Fields in Matter</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgb94e0e2" class="outline-3">
-<h3 id="orgb94e0e2"><span class="section-number-3">4.1</span> Volume and Surface Currents</h3>
+<div id="outline-container-org2740221" class="outline-3">
+<h3 id="org2740221"><span class="section-number-3">4.1</span> Volume and Surface Currents</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 \[ \mathbf{J_b} = \nabla\times\mathbf{M} \qquad \mathbf{K_b} = \mathbf{M} \times \mathbf{\hat{n}}\]
@@ -437,8 +457,8 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 </div>
 
-<div id="outline-container-orgad23c5e" class="outline-3">
-<h3 id="orgad23c5e"><span class="section-number-3">4.2</span> Ampere's Law in Matter</h3>
+<div id="outline-container-org24cdc93" class="outline-3">
+<h3 id="org24cdc93"><span class="section-number-3">4.2</span> Ampere's Law in Matter</h3>
 <div class="outline-text-3" id="text-4-2">
 \begin{align*}
 \nabla\times\mathbf{H} &= \mathbf{J_f}\\
@@ -448,12 +468,12 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 </div>
 
-<div id="outline-container-org6325944" class="outline-3">
-<h3 id="org6325944"><span class="section-number-3">4.3</span> Examples</h3>
+<div id="outline-container-orgd284401" class="outline-3">
+<h3 id="orgd284401"><span class="section-number-3">4.3</span> Examples</h3>
 <div class="outline-text-3" id="text-4-3">
 </div>
-<div id="outline-container-orga19449c" class="outline-4">
-<h4 id="orga19449c"><span class="section-number-4">4.3.1</span> Field of Uniformly Magnetized Sphere</h4>
+<div id="outline-container-org0cf3b4f" class="outline-4">
+<h4 id="org0cf3b4f"><span class="section-number-4">4.3.1</span> Field of Uniformly Magnetized Sphere</h4>
 <div class="outline-text-4" id="text-4-3-1">
 <p>
 \[ \mathbf{B} = \frac23\mu_0\mathbf{M} \]
@@ -461,16 +481,43 @@ D &\equiv \epsilon_0 \mathbf{E} + \mathbf{P}
 </div>
 </div>
 </div>
+
+<div id="outline-container-org840b2a6" class="outline-3">
+<h3 id="org840b2a6"><span class="section-number-3">4.4</span> Magnetisation</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+For <b>linear magnetic materials</b> (paramagnetic and diamagnetic material) the magnetisation \(\mathbf{M}\) is proportional to the field \(\mathbf{B}\), but convention dictates it is written in terms of \(\mathbf{H}\) (which is determined solely by free current and as such traditionally been easy to identify i.e. read the current and you will know \(\mathbf{H}\)):
+\[ \mathbf{M} = \chi_m \mathbf{H}\] 
+where \(\chi_m\) is known as the <b>magnetic susceptibility</b>.
+</p>
+
+<p>
+Then:
+\[ \mathbf{B} = \mu_0(\mathbf{H}+\mathbf{M})  = \mu_0(1+\chi_m)\mathbf{H} = \mu_0\mu_r\mathbf{H} = \mu \mathbf{H}\]
+</p>
 </div>
-
-
-<div id="outline-container-orgf8567ad" class="outline-2">
-<h2 id="orgf8567ad"><span class="section-number-2">5</span> Eletromagnetic Waves</h2>
+</div>
+</div>
+<div id="outline-container-org9ef6203" class="outline-2">
+<h2 id="org9ef6203"><span class="section-number-2">5</span> Boundary Conditions</h2>
 <div class="outline-text-2" id="text-5">
+<p>
+For not having free charges on the surface/interface (as is the case for reflection/refraction):
+</p>
+\begin{align*}
+\epsilon_1 E_1^\perp = \epsilon_2 E_2^\perp \quad & \quad \mathbf{E}^\|_1 = \mathbf{E}^\|_2 \\
+B_1^\perp = B_2^\perp \quad & \quad \frac{1}{\mu_1}\mathbf{B}^\|_1 = \frac{1}{\mu_2}\mathbf{B}^\|_2
+\end{align*}
 </div>
-<div id="outline-container-orgdc0ec69" class="outline-3">
-<h3 id="orgdc0ec69"><span class="section-number-3">5.1</span> Brewster's Angle</h3>
-<div class="outline-text-3" id="text-5-1">
+</div>
+
+<div id="outline-container-org148d7be" class="outline-2">
+<h2 id="org148d7be"><span class="section-number-2">6</span> Eletromagnetic Waves</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgb48ef3f" class="outline-3">
+<h3 id="orgb48ef3f"><span class="section-number-3">6.1</span> Brewster's Angle</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 When \( r_\| = 0\) and \(r_\perp \neq 0\):
 \[ \alpha_B = tan^{-1}\left(\frac{n'}{n}\right)\]
@@ -480,18 +527,26 @@ The transmitted ray angle would be:
 </div>
 </div>
 
-<div id="outline-container-org1925fe2" class="outline-3">
-<h3 id="org1925fe2"><span class="section-number-3">5.2</span> Refractive Index</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-orga1cc002" class="outline-3">
+<h3 id="orga1cc002"><span class="section-number-3">6.2</span> Refractive Index</h3>
+<div class="outline-text-3" id="text-6-2">
 <p>
 \[ n = \frac{ck}{\omega}\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-org9cacbd7" class="outline-3">
-<h3 id="org9cacbd7"><span class="section-number-3">5.3</span> Velocities</h3>
-<div class="outline-text-3" id="text-5-3">
+<div id="outline-container-org9729405" class="outline-3">
+<h3 id="org9729405"><span class="section-number-3">6.3</span> Wavevector</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+If the wavevector \(k\) is real, there is no attenuation of EM waves. If it is imaginary, it causes the EM wave to pick up an attenuating function of distance, so attenuation occurs in conductors and plasma. 
+</p>
+</div>
+</div>
+<div id="outline-container-org6e72249" class="outline-3">
+<h3 id="org6e72249"><span class="section-number-3">6.4</span> Velocities</h3>
+<div class="outline-text-3" id="text-6-4">
 <p>
 Phase velocity:
 \[ v_p = \frac{\omega}{k} = \frac{c}{n}\]
@@ -506,9 +561,9 @@ Energy travels at group velocity so phase velocity <b>can</b> be faster than lig
 </div>
 </div>
 
-<div id="outline-container-orgf7abc93" class="outline-3">
-<h3 id="orgf7abc93"><span class="section-number-3">5.4</span> Fresnel Equations</h3>
-<div class="outline-text-3" id="text-5-4">
+<div id="outline-container-org487ccf9" class="outline-3">
+<h3 id="org487ccf9"><span class="section-number-3">6.5</span> Fresnel Equations</h3>
+<div class="outline-text-3" id="text-6-5">
 <p>
 Usually deal with materials where \(\mu_r = 1\), so:
 \[ n = \sqrt{\frac{\epsilon\mu}{\epsilon_0\mu_0}} = \sqrt{\epsilon_r}\]
@@ -516,11 +571,51 @@ Usually deal with materials where \(\mu_r = 1\), so:
 </div>
 </div>
 
-<div id="outline-container-org0d53b20" class="outline-3">
-<h3 id="org0d53b20"><span class="section-number-3">5.5</span> Relating E field and B field for plane waves</h3>
-<div class="outline-text-3" id="text-5-5">
+<div id="outline-container-orgf4caaf2" class="outline-3">
+<h3 id="orgf4caaf2"><span class="section-number-3">6.6</span> Relating E field and B field for plane waves</h3>
+<div class="outline-text-3" id="text-6-6">
 <p>
 \[ \mathbf{\hat{B}} = \frac{1}{\omega} \mathbf{k}\times\mathbf{\hat{E}}\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1b64f22" class="outline-3">
+<h3 id="org1b64f22"><span class="section-number-3">6.7</span> Pressure</h3>
+<div class="outline-text-3" id="text-6-7">
+<p>
+Pressure from photon is derived from the momentum of a photon, and the flux is:
+\[ p = \frac{I}{c} = \frac{\langle N \rangle}{c}\]
+For reflected radiation:
+\[ p = 2\frac{I}{c} = \epsilon_0E_0^2\]
+Lose the factor of 2 if absorbed.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org89ad13a" class="outline-2">
+<h2 id="org89ad13a"><span class="section-number-2">7</span> Plasma Physics</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+This is treated as an extension of EM waves into conducting media.
+</p>
+</div>
+<div id="outline-container-org26b4c9d" class="outline-3">
+<h3 id="org26b4c9d"><span class="section-number-3">7.1</span> Definition</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+"A plasma is a state of matter containing an appreciable fraction of freely moving charged particles - they usually take the form or partly or wholly ionized gases. There are a sufficient number of these charged particles to cause the electromagnetic properties of the medium to be significantly different from those of solids, liquids or gases which are not ionized."
+</p>
+</div>
+</div>
+<div id="outline-container-org7545614" class="outline-3">
+<h3 id="org7545614"><span class="section-number-3">7.2</span> Useful equations</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+The dipole moment per unit volume is:
+\[ \mathbf{P} = -N_e e \mathbf{x}\]
+It can be shown that:
+\[ \mathbf{J} = \frac{\partial \mathbf{P}}{\partial t}\]
 </p>
 </div>
 </div>
@@ -528,7 +623,7 @@ Usually deal with materials where \(\mu_r = 1\), so:
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kelvin</p>
-<p class="date">Created: 2022-04-30 Sat 13:13</p>
+<p class="date">Created: 2022-05-03 Tue 00:07</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
