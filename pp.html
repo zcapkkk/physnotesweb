@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-05-03 Tue 16:54 -->
+<!-- 2022-05-05 Thu 18:46 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Nuclear Physics Cheatsheet</title>
@@ -256,59 +256,83 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orge216bd1">1. Conversion</a>
+<li><a href="#orgd0a4181">1. Conversion</a>
 <ul>
-<li><a href="#org5ce0f31">1.1. Momentum</a></li>
-<li><a href="#org0c65538">1.2. Mass</a></li>
-<li><a href="#org182992e">1.3. Length</a></li>
-<li><a href="#orgf3fcbbf">1.4. Time</a></li>
+<li><a href="#org53c4fb2">1.1. Momentum</a></li>
+<li><a href="#orgd5d9ea6">1.2. Mass</a></li>
+<li><a href="#org132b41c">1.3. Length</a></li>
+<li><a href="#org7d99c3b">1.4. Time</a></li>
 </ul>
 </li>
-<li><a href="#orge0826f4">2. Four Vectors and Invariants</a>
+<li><a href="#org8ed0652">2. Four Vectors and Invariants</a>
 <ul>
-<li><a href="#orgdb039cd">2.1. Invariant Formula</a></li>
-<li><a href="#orgc7ba7ce">2.2. Momentum Four-Vector</a></li>
-<li><a href="#orgfc47ebb">2.3. Invariant Mass</a></li>
-<li><a href="#org11b16d2">2.4. Collisions</a>
+<li><a href="#org0c23413">2.1. Invariant Formula</a></li>
+<li><a href="#org422cb03">2.2. Momentum Four-Vector</a></li>
+<li><a href="#org925e44f">2.3. Invariant Mass</a></li>
+<li><a href="#org42aa15c">2.4. Pair of Particles Invariant Mass</a></li>
+<li><a href="#orgca88370">2.5. Collisions</a>
 <ul>
-<li><a href="#orgcaaff69">2.4.1. Colliding Beam</a></li>
-<li><a href="#orga465895">2.4.2. Fixed Target</a></li>
+<li><a href="#orgd36fa57">2.5.1. Colliding Beam</a></li>
+<li><a href="#org9e0b634">2.5.2. Fixed Target</a></li>
+<li><a href="#org1a3596e">2.5.3. Angle</a></li>
 </ul>
 </li>
+<li><a href="#org553eb38">2.6. Assumptions</a></li>
 </ul>
 </li>
-<li><a href="#orgbeab1f2">3. </a></li>
-<li><a href="#orgbe5de53">4. Particles</a></li>
-<li><a href="#org4562955">5. Properties</a>
+<li><a href="#org568f8f0">3. Allowed Reactions</a></li>
+<li><a href="#org65ec116">4. Potentials and Amplitudes</a>
 <ul>
-<li><a href="#org3c9af7a">5.1. Line Widths and Lifetimes</a></li>
+<li><a href="#orge8e6bae">4.1. Relativistic Scattering Amplitudes</a></li>
 </ul>
 </li>
-<li><a href="#org93717e6">6. Interaction</a>
+<li><a href="#org5b34e8b">5. Particles</a></li>
+<li><a href="#org4b4cdea">6. Properties</a></li>
+<li><a href="#org252ebf1">7. Detectors and Radiation</a>
 <ul>
-<li><a href="#orgfdf05e3">6.1. Range of forces</a></li>
+<li><a href="#orgea00c4d">7.1. Detector Properties and Construction</a></li>
+<li><a href="#org3143f89">7.2. Bethe-Bloch</a></li>
+<li><a href="#orge37942c">7.3. Line Widths and Lifetimes</a></li>
 </ul>
 </li>
-<li><a href="#org6e4e46e">7. Symmetries</a>
+<li><a href="#orgff03f66">8. Interaction</a>
 <ul>
-<li><a href="#org57a807c">7.1. Helicity</a></li>
+<li><a href="#org9c88ad8">8.1. Range of forces</a></li>
 </ul>
 </li>
-<li><a href="#orgbc9624e">8. Nuclear Physics</a>
+<li><a href="#orgd6e1a74">9. Symmetries</a>
 <ul>
-<li><a href="#orgac7b055">8.1. Half-Life</a></li>
+<li><a href="#orgc5fe9e3">9.1. Helicity</a></li>
+</ul>
+</li>
+<li><a href="#org9658076">10. Nuclear Physics</a>
+<ul>
+<li><a href="#org7ef7c04">10.1. Half-Life</a></li>
+<li><a href="#org3179116">10.2. SEMF and Decays</a>
+<ul>
+<li><a href="#org2ab9d84">10.2.1. The \(\beta^-\) decay</a></li>
+<li><a href="#orgba1931c">10.2.2. The \(\beta^+\) decay</a></li>
+<li><a href="#org737bc6f">10.2.3. Electron Capture</a></li>
+</ul>
+</li>
+<li><a href="#org5a84173">10.3. Shell Model</a>
+<ul>
+<li><a href="#org2a7fa5e">10.3.1. Nomenclature</a></li>
+<li><a href="#orgf940a9a">10.3.2. Predictions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge216bd1" class="outline-2">
-<h2 id="orge216bd1"><span class="section-number-2">1</span> Conversion</h2>
+<div id="outline-container-orgd0a4181" class="outline-2">
+<h2 id="orgd0a4181"><span class="section-number-2">1</span> Conversion</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org5ce0f31" class="outline-3">
-<h3 id="org5ce0f31"><span class="section-number-3">1.1</span> Momentum</h3>
+<div id="outline-container-org53c4fb2" class="outline-3">
+<h3 id="org53c4fb2"><span class="section-number-3">1.1</span> Momentum</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 Relevant formula:
@@ -318,8 +342,8 @@ for massless particle, so reinsert \(c\) by multiplication.
 </div>
 </div>
 
-<div id="outline-container-org0c65538" class="outline-3">
-<h3 id="org0c65538"><span class="section-number-3">1.2</span> Mass</h3>
+<div id="outline-container-orgd5d9ea6" class="outline-3">
+<h3 id="orgd5d9ea6"><span class="section-number-3">1.2</span> Mass</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 \[ E = mc^2\]
@@ -328,8 +352,8 @@ Multiply by \(c^2\)
 </div>
 </div>
 
-<div id="outline-container-org182992e" class="outline-3">
-<h3 id="org182992e"><span class="section-number-3">1.3</span> Length</h3>
+<div id="outline-container-org132b41c" class="outline-3">
+<h3 id="org132b41c"><span class="section-number-3">1.3</span> Length</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 Relevant formula is the reduced Compton Wavelength (I think):
@@ -343,8 +367,8 @@ A useful conversion factor is \(\hbar c = 0.197 GeV fm\)
 </div>
 </div>
 
-<div id="outline-container-orgf3fcbbf" class="outline-3">
-<h3 id="orgf3fcbbf"><span class="section-number-3">1.4</span> Time</h3>
+<div id="outline-container-org7d99c3b" class="outline-3">
+<h3 id="org7d99c3b"><span class="section-number-3">1.4</span> Time</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 By dimensional analysis: \(\hbar [Js], c [ms^{-1}], GeV [J]\), so:
@@ -354,12 +378,12 @@ By dimensional analysis: \(\hbar [Js], c [ms^{-1}], GeV [J]\), so:
 </div>
 </div>
 
-<div id="outline-container-orge0826f4" class="outline-2">
-<h2 id="orge0826f4"><span class="section-number-2">2</span> Four Vectors and Invariants</h2>
+<div id="outline-container-org8ed0652" class="outline-2">
+<h2 id="org8ed0652"><span class="section-number-2">2</span> Four Vectors and Invariants</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgdb039cd" class="outline-3">
-<h3 id="orgdb039cd"><span class="section-number-3">2.1</span> Invariant Formula</h3>
+<div id="outline-container-org0c23413" class="outline-3">
+<h3 id="org0c23413"><span class="section-number-3">2.1</span> Invariant Formula</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Invariant formula which equates energy, momentum and mass gives:
@@ -368,8 +392,8 @@ Invariant formula which equates energy, momentum and mass gives:
 </div>
 </div>
 
-<div id="outline-container-orgc7ba7ce" class="outline-3">
-<h3 id="orgc7ba7ce"><span class="section-number-3">2.2</span> Momentum Four-Vector</h3>
+<div id="outline-container-org422cb03" class="outline-3">
+<h3 id="org422cb03"><span class="section-number-3">2.2</span> Momentum Four-Vector</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 For some bizarre reason the four-vector is defined to be:
@@ -380,8 +404,8 @@ The inner product:
 </div>
 </div>
 
-<div id="outline-container-orgfc47ebb" class="outline-3">
-<h3 id="orgfc47ebb"><span class="section-number-3">2.3</span> Invariant Mass</h3>
+<div id="outline-container-org925e44f" class="outline-3">
+<h3 id="org925e44f"><span class="section-number-3">2.3</span> Invariant Mass</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Defined as \(W = P/c^2\) so:
@@ -390,38 +414,90 @@ Defined as \(W = P/c^2\) so:
 </div>
 </div>
 
-<div id="outline-container-org11b16d2" class="outline-3">
-<h3 id="org11b16d2"><span class="section-number-3">2.4</span> Collisions</h3>
+<div id="outline-container-org42aa15c" class="outline-3">
+<h3 id="org42aa15c"><span class="section-number-3">2.4</span> Pair of Particles Invariant Mass</h3>
 <div class="outline-text-3" id="text-2-4">
+<p>
+\[ (P_1 + P_2)\cdot (P_1 + P_2)\]
+Expand accordingly and note:
+\[ P_1^2 = E_1^2 -c^2|\hat{p}|^2\]
+If mass is negligible, by invariant formula:
+\[ E<sup>2</sup> - p<sup>2c</sup><sup>2</sup> = 0<sup>2c</sup><sup>2</sup> &there4; E<sup>2</sup> = p<sup>2c</sup><sup>2</sup>]
+</p>
 </div>
-<div id="outline-container-orgcaaff69" class="outline-4">
-<h4 id="orgcaaff69"><span class="section-number-4">2.4.1</span> Colliding Beam</h4>
-<div class="outline-text-4" id="text-2-4-1">
+</div>
+
+<div id="outline-container-orgca88370" class="outline-3">
+<h3 id="orgca88370"><span class="section-number-3">2.5</span> Collisions</h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-orgd36fa57" class="outline-4">
+<h4 id="orgd36fa57"><span class="section-number-4">2.5.1</span> Colliding Beam</h4>
+<div class="outline-text-4" id="text-2-5-1">
 <p>
 \[ E_{CM} = 2E_{\text{beam}}\]
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga465895" class="outline-4">
-<h4 id="orga465895"><span class="section-number-4">2.4.2</span> Fixed Target</h4>
-<div class="outline-text-4" id="text-2-4-2">
+<div id="outline-container-org9e0b634" class="outline-4">
+<h4 id="org9e0b634"><span class="section-number-4">2.5.2</span> Fixed Target</h4>
+<div class="outline-text-4" id="text-2-5-2">
 <p>
 \[ E_{CM} = \sqrt{2E_\text{beam}m_\text{target}}\]
 </p>
 </div>
 </div>
+<div id="outline-container-org1a3596e" class="outline-4">
+<h4 id="org1a3596e"><span class="section-number-4">2.5.3</span> Angle</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<p>
+The COM energy is:
+\[ W = \sqrt{2E_1E_2(1-\cos\theta)}\]
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org553eb38" class="outline-3">
+<h3 id="org553eb38"><span class="section-number-3">2.6</span> Assumptions</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>The beam energy is usually much larger than the mass</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org568f8f0" class="outline-2">
+<h2 id="org568f8f0"><span class="section-number-2">3</span> Allowed Reactions</h2>
+<div class="outline-text-2" id="text-3">
+<ol class="org-ol">
+<li>If 1 to 1 particle, energy and momentum CANNOT be conserved</li>
+<li>Check mass conservation</li>
+<li>Check lepton number</li>
+</ol>
 </div>
 </div>
 
-<div id="outline-container-orgbeab1f2" class="outline-2">
-<h2 id="orgbeab1f2"><span class="section-number-2">3</span> </h2>
-</div>
 
-
-<div id="outline-container-orgbe5de53" class="outline-2">
-<h2 id="orgbe5de53"><span class="section-number-2">4</span> Particles</h2>
+<div id="outline-container-org65ec116" class="outline-2">
+<h2 id="org65ec116"><span class="section-number-2">4</span> Potentials and Amplitudes</h2>
 <div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orge8e6bae" class="outline-3">
+<h3 id="orge8e6bae"><span class="section-number-3">4.1</span> Relativistic Scattering Amplitudes</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+\[ \cal{M} =  \frac{g^2\hbar^2c^2}{p^2-M^2_xc^4} \]
+where \(p) is the 4-momentum exchanged and \(M_X\) is the mass of the exchange particle. You can be told that \( g_{EM} = g_\text{WEAK}\). Take the square for the probability (as with QM).
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org5b34e8b" class="outline-2">
+<h2 id="org5b34e8b"><span class="section-number-2">5</span> Particles</h2>
+<div class="outline-text-2" id="text-5">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -429,33 +505,77 @@ Defined as \(W = P/c^2\) so:
 <col  class="org-left" />
 
 <col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-left">Particle</td>
-<td class="org-left">Structure</td>
-</tr>
 
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Particle</th>
+<th scope="col" class="org-left">Structure</th>
+<th scope="col" class="org-right">Mass \(MeV/c^2\)</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="org-left">Proton</td>
 <td class="org-left">uud</td>
+<td class="org-right">938.272</td>
 </tr>
 
 <tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">Neutron</td>
+<td class="org-left">udd</td>
+<td class="org-right">939.565</td>
+</tr>
+
+<tr>
+<td class="org-left">Electron</td>
+<td class="org-left">Lepton</td>
+<td class="org-right">0.510998</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<div id="outline-container-org4562955" class="outline-2">
-<h2 id="org4562955"><span class="section-number-2">5</span> Properties</h2>
-<div class="outline-text-2" id="text-5">
+
+<div id="outline-container-org4b4cdea" class="outline-2">
+<h2 id="org4b4cdea"><span class="section-number-2">6</span> Properties</h2>
 </div>
-<div id="outline-container-org3c9af7a" class="outline-3">
-<h3 id="org3c9af7a"><span class="section-number-3">5.1</span> Line Widths and Lifetimes</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org252ebf1" class="outline-2">
+<h2 id="org252ebf1"><span class="section-number-2">7</span> Detectors and Radiation</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-orgea00c4d" class="outline-3">
+<h3 id="orgea00c4d"><span class="section-number-3">7.1</span> Detector Properties and Construction</h3>
+<div class="outline-text-3" id="text-7-1">
+<ul class="org-ul">
+<li>Position trackers are placed close to interaction to measure decay length (B-hadrons have only a few mm)</li>
+<li>High granularity gives ability to reconstruct crowded events</li>
+<li>Magnetic field causes particles to follow helical trajectories, so the momentum can be measured based on the radius of curvature</li>
+<li>Hadronic interaction length is 10+cm so placed deeper than EM calorimeterd</li>
+<li>Muons travel the farthest and can be detected by scintillator on the outer layer</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org3143f89" class="outline-3">
+<h3 id="org3143f89"><span class="section-number-3">7.2</span> Bethe-Bloch</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+Sketch \(\frac{dE}{dx}\) over \(\beta\gamma\) (which are the relativistic constants. Properties of the graph:
+</p>
+<ul class="org-ul">
+<li>Steep fall as \(\beta\gamma\) increases at low speeds</li>
+<li>Broad minimum - "minimum ionising" region</li>
+<li>Slow "logarithmic" rise at large \(\beta\gamma\)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge37942c" class="outline-3">
+<h3 id="orge37942c"><span class="section-number-3">7.3</span> Line Widths and Lifetimes</h3>
+<div class="outline-text-3" id="text-7-3">
 <p>
 The line width is one over lifetime, and lifetime is proportional to one over mass to the power of 5.
 \[ \tau = \left(\frac{1}{m}\right)^5\]
@@ -463,13 +583,13 @@ The line width is one over lifetime, and lifetime is proportional to one over ma
 </div>
 </div>
 </div>
-<div id="outline-container-org93717e6" class="outline-2">
-<h2 id="org93717e6"><span class="section-number-2">6</span> Interaction</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgff03f66" class="outline-2">
+<h2 id="orgff03f66"><span class="section-number-2">8</span> Interaction</h2>
+<div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-orgfdf05e3" class="outline-3">
-<h3 id="orgfdf05e3"><span class="section-number-3">6.1</span> Range of forces</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org9c88ad8" class="outline-3">
+<h3 id="org9c88ad8"><span class="section-number-3">8.1</span> Range of forces</h3>
+<div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>Photon: infinite</li>
 <li>Pion: 1.4 fm</li>
@@ -479,13 +599,13 @@ The line width is one over lifetime, and lifetime is proportional to one over ma
 </div>
 </div>
 
-<div id="outline-container-org6e4e46e" class="outline-2">
-<h2 id="org6e4e46e"><span class="section-number-2">7</span> Symmetries</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-orgd6e1a74" class="outline-2">
+<h2 id="orgd6e1a74"><span class="section-number-2">9</span> Symmetries</h2>
+<div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-org57a807c" class="outline-3">
-<h3 id="org57a807c"><span class="section-number-3">7.1</span> Helicity</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-orgc5fe9e3" class="outline-3">
+<h3 id="orgc5fe9e3"><span class="section-number-3">9.1</span> Helicity</h3>
+<div class="outline-text-3" id="text-9-1">
 <p>
 Helicity is the projection of spin on its momentum.
 </p>
@@ -504,13 +624,13 @@ It is <b>negative</b> and <b>left-handed</b> if the spin is in the other directi
 </div>
 
 
-<div id="outline-container-orgbc9624e" class="outline-2">
-<h2 id="orgbc9624e"><span class="section-number-2">8</span> Nuclear Physics</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org9658076" class="outline-2">
+<h2 id="org9658076"><span class="section-number-2">10</span> Nuclear Physics</h2>
+<div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-orgac7b055" class="outline-3">
-<h3 id="orgac7b055"><span class="section-number-3">8.1</span> Half-Life</h3>
-<div class="outline-text-3" id="text-8-1">
+<div id="outline-container-org7ef7c04" class="outline-3">
+<h3 id="org7ef7c04"><span class="section-number-3">10.1</span> Half-Life</h3>
+<div class="outline-text-3" id="text-10-1">
 <p>
 Nuclear activity is defined as:
 \[ A = \frac{dN}{dt} = \frac{N}{\tau}\]
@@ -523,11 +643,101 @@ Some algebra gives:
 </p>
 </div>
 </div>
+
+<div id="outline-container-org3179116" class="outline-3">
+<h3 id="org3179116"><span class="section-number-3">10.2</span> SEMF and Decays</h3>
+<div class="outline-text-3" id="text-10-2">
+</div>
+<div id="outline-container-org2ab9d84" class="outline-4">
+<h4 id="org2ab9d84"><span class="section-number-4">10.2.1</span> The \(\beta^-\) decay</h4>
+<div class="outline-text-4" id="text-10-2-1">
+<p>
+This is:
+\[ n \rightarrow p + e^- \bar{\nu}_e\]
+This decay is allowed if:
+\[M(Z,A) > M(Z+1,A)\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgba1931c" class="outline-4">
+<h4 id="orgba1931c"><span class="section-number-4">10.2.2</span> The \(\beta^+\) decay</h4>
+<div class="outline-text-4" id="text-10-2-2">
+<p>
+This is:
+\[ p \rightarrow n + e^+ + \nu_e\]
+This is allowed if:
+\[ M(Z,A) > M(Z-1,A)+2m_e\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-org737bc6f" class="outline-4">
+<h4 id="org737bc6f"><span class="section-number-4">10.2.3</span> Electron Capture</h4>
+<div class="outline-text-4" id="text-10-2-3">
+<p>
+This is:
+\[ p + e^- \rightarrow n + \nu_e\]
+This is allowed if:
+\[ M(Z,A) > M(Z-1,A)+\epsilon\]
+Where \(\epsilon\) is the excitation energy of the atomic shell of the captured electron.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5a84173" class="outline-3">
+<h3 id="org5a84173"><span class="section-number-3">10.3</span> Shell Model</h3>
+<div class="outline-text-3" id="text-10-3">
+</div>
+<div id="outline-container-org2a7fa5e" class="outline-4">
+<h4 id="org2a7fa5e"><span class="section-number-4">10.3.1</span> Nomenclature</h4>
+<div class="outline-text-4" id="text-10-3-1">
+<p>
+The label is:
+\[(nl_J)^N\]
+Where \( J = L+S\)
+Each nucleon can occupy:
+</p>
+<ul class="org-ul">
+<li>\( n = 1,2,3,...\)</li>
+<li>\(l = 0,1,2,3,...n-1\)</li>
+<li>There are \(2l+1\) substates</li>
+<li>Each \(l\) level can hold \(2J+1\) nucleons</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf940a9a" class="outline-4">
+<h4 id="orgf940a9a"><span class="section-number-4">10.3.2</span> Predictions</h4>
+<div class="outline-text-4" id="text-10-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org40f9283"></a>Spins<br />
+<div class="outline-text-5" id="text-10-3-2-1">
+<p>
+The spin is determined by the unpaired nucleon, otherwise 0 if all nucleons are paired. If it is an odd-odd nuclei, the spin lies on:
+\[ |J_P-J_N| \leq s_N \leq J_P+J_N\]
+</p>
+</div>
+</li>
+
+<li><a id="org3b156f7"></a>Parity<br />
+<div class="outline-text-5" id="text-10-3-2-2">
+<p>
+Intrinsic parities of proton and neutron are \(+1\), and the parity due to angular momentum is \(P = (-1)^l\), and as it is a multiplicative quantum number:
+\[ P_\text{nucleus} = P_\text{last-proton} \times P_\text{last-neutron}\]
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kelvin</p>
-<p class="date">Created: 2022-05-03 Tue 16:54</p>
+<p class="date">Created: 2022-05-05 Thu 18:46</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
