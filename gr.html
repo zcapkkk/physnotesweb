@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-05-07 Sat 01:08 -->
+<!-- 2022-05-08 Sun 23:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>General Relativity Formulas</title>
@@ -256,85 +256,87 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc131e46">1. Vectors and Tensors</a>
+<li><a href="#orge2f6419">1. Vectors and Tensors</a>
 <ul>
-<li><a href="#orgc84bf02">1.1. Coordinate Transformation</a></li>
-<li><a href="#org00fd2ac">1.2. Contravariant and Covariant vectors</a></li>
-<li><a href="#orgee3a2a1">1.3. Dual Vector Space</a></li>
-<li><a href="#orga0e5090">1.4. Basis Vectors</a></li>
-<li><a href="#org0bf860c">1.5. Classical Differential</a></li>
-<li><a href="#org4043bb1">1.6. Vector Calculus</a></li>
-<li><a href="#org42f1048">1.7. Tensors</a>
+<li><a href="#org23c508d">1.1. Coordinate Transformation</a></li>
+<li><a href="#orgb725d8f">1.2. Contravariant and Covariant vectors</a></li>
+<li><a href="#org74e022a">1.3. Dual Vector Space</a></li>
+<li><a href="#orgefa9834">1.4. Basis Vectors</a></li>
+<li><a href="#orga52994d">1.5. Classical Differential</a></li>
+<li><a href="#org2ceddc1">1.6. Vector Calculus</a></li>
+<li><a href="#orge7287df">1.7. Tensors</a>
 <ul>
-<li><a href="#org2f61516">1.7.1. Contraction</a></li>
-<li><a href="#orgb90296d">1.7.2. Symmetry and Skew-symmetry</a></li>
-<li><a href="#org94014aa">1.7.3. Partial Derivative</a></li>
+<li><a href="#org66556e3">1.7.1. Contraction</a></li>
+<li><a href="#orgd1dab84">1.7.2. Symmetry and Skew-symmetry</a></li>
+<li><a href="#orge7ce643">1.7.3. Partial Derivative</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org6d1e369">2. Differential Geometry</a>
+<li><a href="#org94075a4">2. Differential Geometry</a>
 <ul>
-<li><a href="#org0e73fef">2.1. Manifold</a></li>
-<li><a href="#org064c0d5">2.2. Metric and Line Element</a>
+<li><a href="#orga899bc5">2.1. Manifold</a></li>
+<li><a href="#org5d60cb2">2.2. Metric and Line Element</a>
 <ul>
-<li><a href="#orge8ec7b0">2.2.1. Metric Signature</a></li>
-<li><a href="#org1a65d4b">2.2.2. Lorentzian Metric</a></li>
-<li><a href="#orgb459978">2.2.3. Volume of a space</a></li>
-<li><a href="#org6273397">2.2.4. Minkowski Space</a></li>
+<li><a href="#orgd0a69f9">2.2.1. Metric Signature</a></li>
+<li><a href="#orgbe83cd3">2.2.2. Lorentzian Metric</a></li>
+<li><a href="#org6f1afb6">2.2.3. Volume of a space</a></li>
+<li><a href="#org4bcd208">2.2.4. Minkowski Space</a></li>
 </ul>
 </li>
-<li><a href="#orgf260c15">2.3. Geodesics</a></li>
-<li><a href="#org8bac439">2.4. Geodesic and Christoffel Symbol</a></li>
-<li><a href="#org5eefc39">2.5. Covariant Derivative</a>
+<li><a href="#org862c151">2.3. Geodesics</a></li>
+<li><a href="#org7606bdc">2.4. Geodesic and Christoffel Symbol</a></li>
+<li><a href="#orgc86678b">2.5. Eq. 1.100</a></li>
+<li><a href="#org61b6af7">2.6. Covariant Derivative</a>
 <ul>
-<li><a href="#orgaba2114">2.5.1. Properties</a></li>
-<li><a href="#orgfa6ad5a">2.5.2. Metricity</a></li>
-<li><a href="#org2d04190">2.5.3. Torsion</a></li>
-<li><a href="#orgc97e2e6">2.5.4. Uniqueness of the Covariant Derivative</a></li>
-<li><a href="#org1b304e5">2.5.5. Important Formulas</a></li>
+<li><a href="#orgc7094d3">2.6.1. Properties</a></li>
+<li><a href="#org1e0f036">2.6.2. Metricity</a></li>
+<li><a href="#orgb242aa0">2.6.3. Torsion</a></li>
+<li><a href="#org279b054">2.6.4. Uniqueness of the Covariant Derivative</a></li>
+<li><a href="#org20020d7">2.6.5. Important Formulas</a></li>
 </ul>
 </li>
-<li><a href="#orga8a8c95">2.6. Parallel Transport</a></li>
-<li><a href="#orgd189212">2.7. Geodesic and Parallel Transport</a></li>
-<li><a href="#org8f205b1">2.8. Riemann Curvature Tensor</a></li>
-<li><a href="#org468cc92">2.9. Cross tensor thingy?</a></li>
-<li><a href="#orgec0f065">2.10. Riemann Tensor Identities</a></li>
-<li><a href="#orgf4979cf">2.11. W property</a></li>
-<li><a href="#org26dae22">2.12. Ricci Tensor and Ricci Scalar</a></li>
-<li><a href="#org29f450a">2.13. Einstein Tensor</a></li>
-<li><a href="#org837a84f">2.14. Geodesic Deviation</a></li>
+<li><a href="#orgae97c3e">2.7. Parallel Transport</a></li>
+<li><a href="#orgb3fe2ca">2.8. Geodesic and Parallel Transport</a></li>
+<li><a href="#org060d534">2.9. Riemann Curvature Tensor</a></li>
+<li><a href="#org18b3594">2.10. Cross tensor thingy?</a></li>
+<li><a href="#orgf341ae6">2.11. Riemann Tensor Identities</a></li>
+<li><a href="#orgf786f25">2.12. W property</a></li>
+<li><a href="#org077bc75">2.13. Ricci Tensor and Ricci Scalar</a></li>
+<li><a href="#org5167ca6">2.14. Curvature</a></li>
+<li><a href="#org544459a">2.15. Einstein Tensor</a></li>
+<li><a href="#org3cec017">2.16. Geodesic Deviation</a></li>
 </ul>
 </li>
-<li><a href="#orga9c7ee7">3. Einstein Field Equations</a>
+<li><a href="#org1961f9e">3. Einstein Field Equations</a>
 <ul>
-<li><a href="#org7414124">3.1. Stress-Energy Tensors</a></li>
-<li><a href="#org0e77301">3.2. Geodesics and Newton's Law</a></li>
-<li><a href="#org506d460">3.3. Curvature in vacuum</a></li>
-<li><a href="#org4106b73">3.4. Einstein Field Equations</a></li>
-<li><a href="#org08d8aef">3.5. Minimal Coupling</a></li>
-<li><a href="#org6594ff6">3.6. Linearised Riemann and Ricci Tensors</a></li>
-<li><a href="#org6b509a0">3.7. SOme bullshit&#x2026;</a></li>
-<li><a href="#org23eebb5">3.8. Gravitational Waves</a></li>
+<li><a href="#orgec09f17">3.1. Stress-Energy Tensors</a></li>
+<li><a href="#orgd1848ff">3.2. Geodesics and Newton's Law</a></li>
+<li><a href="#org55df5e6">3.3. Curvature in vacuum</a></li>
+<li><a href="#org50c9856">3.4. Einstein Field Equations</a></li>
+<li><a href="#orgf076c0d">3.5. Minimal Coupling</a></li>
+<li><a href="#orgbc97a41">3.6. Linearised Riemann and Ricci Tensors</a></li>
+<li><a href="#org6e83918">3.7. SOme bullshit&#x2026;</a></li>
+<li><a href="#orgbbffb32">3.8. Gravitational Waves</a></li>
 </ul>
 </li>
-<li><a href="#orgdca089f">4. Schwarzschild Solutions</a>
+<li><a href="#org70daeb1">4. Schwarzschild Solutions</a>
 <ul>
-<li><a href="#orgc71db4e">4.1. Schwarzschild Solution</a></li>
-<li><a href="#org0a8aef6">4.2. Schwarzschild Radius</a></li>
-<li><a href="#org25aa9fb">4.3. Schwarzschild Metric under Cartesian Coordinates</a></li>
-<li><a href="#orgb1c6224">4.4. Geodesics in Schwarzschild Spacetime</a>
+<li><a href="#orge3efec8">4.1. Schwarzschild Solution</a></li>
+<li><a href="#org82f074d">4.2. Schwarzschild Radius</a></li>
+<li><a href="#org77dbf8e">4.3. Schwarzschild Metric under Cartesian Coordinates</a></li>
+<li><a href="#orgfd7718d">4.4. Geodesics in Schwarzschild Spacetime</a>
 <ul>
-<li><a href="#orgf493a92">4.4.1. Setting the Lagrangian</a></li>
+<li><a href="#org4d6efd5">4.4.1. Setting the Lagrangian</a></li>
 </ul>
 </li>
-<li><a href="#org844c2ec">4.5. Hints for Solving Geodesics</a>
+<li><a href="#orgc76b11c">4.5. Hints for Solving Geodesics</a>
 <ul>
-<li><a href="#org95e3f86">4.5.1. Mercury Perihelion Precession</a></li>
-<li><a href="#org09edf14">4.5.2. Light Deflection by the Sun</a></li>
+<li><a href="#orgbb7e004">4.5.1. Mercury Perihelion Precession</a></li>
+<li><a href="#org53d1568">4.5.2. Light Deflection by the Sun</a></li>
 </ul>
 </li>
-<li><a href="#org3017c6c">4.6. Brief Summary on Attacking Problems</a></li>
+<li><a href="#org2be66d1">4.6. Brief Summary on Attacking Problems</a></li>
 </ul>
 </li>
 </ul>
@@ -342,12 +344,12 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgc131e46" class="outline-2">
-<h2 id="orgc131e46"><span class="section-number-2">1</span> Vectors and Tensors</h2>
+<div id="outline-container-orge2f6419" class="outline-2">
+<h2 id="orge2f6419"><span class="section-number-2">1</span> Vectors and Tensors</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgc84bf02" class="outline-3">
-<h3 id="orgc84bf02"><span class="section-number-3">1.1</span> Coordinate Transformation</h3>
+<div id="outline-container-org23c508d" class="outline-3">
+<h3 id="org23c508d"><span class="section-number-3">1.1</span> Coordinate Transformation</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 \[ J^i_j = \frac{\partial Y^i}{\partial X^j}\]
@@ -355,8 +357,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org00fd2ac" class="outline-3">
-<h3 id="org00fd2ac"><span class="section-number-3">1.2</span> Contravariant and Covariant vectors</h3>
+<div id="outline-container-orgb725d8f" class="outline-3">
+<h3 id="orgb725d8f"><span class="section-number-3">1.2</span> Contravariant and Covariant vectors</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 Contravariant vector \(T^i\) transforms as:
@@ -372,8 +374,8 @@ Covariant vector \(S_i\) transforms as:
 </div>
 </div>
 
-<div id="outline-container-orgee3a2a1" class="outline-3">
-<h3 id="orgee3a2a1"><span class="section-number-3">1.3</span> Dual Vector Space</h3>
+<div id="outline-container-org74e022a" class="outline-3">
+<h3 id="org74e022a"><span class="section-number-3">1.3</span> Dual Vector Space</h3>
 <div class="outline-text-3" id="text-1-3">
 <p>
 A space in which operation with the `mother' space produces a map to real number. Example: bras are the <b>dual space</b> of kets and the inner product produces a complex number.
@@ -381,8 +383,8 @@ A space in which operation with the `mother' space produces a map to real number
 </div>
 </div>
 
-<div id="outline-container-orga0e5090" class="outline-3">
-<h3 id="orga0e5090"><span class="section-number-3">1.4</span> Basis Vectors</h3>
+<div id="outline-container-orgefa9834" class="outline-3">
+<h3 id="orgefa9834"><span class="section-number-3">1.4</span> Basis Vectors</h3>
 <div class="outline-text-3" id="text-1-4">
 <p>
 \[ \mathbf{e}_i = \partial/\partial X^i \qquad \mathbf{E}^i = dX^i\]
@@ -395,8 +397,8 @@ Therefore:
 </div>
 </div>
 
-<div id="outline-container-org0bf860c" class="outline-3">
-<h3 id="org0bf860c"><span class="section-number-3">1.5</span> Classical Differential</h3>
+<div id="outline-container-orga52994d" class="outline-3">
+<h3 id="orga52994d"><span class="section-number-3">1.5</span> Classical Differential</h3>
 <div class="outline-text-3" id="text-1-5">
 <p>
 Exists in the dual space, defined as:
@@ -407,8 +409,8 @@ COnsidering:
 </div>
 </div>
 
-<div id="outline-container-org4043bb1" class="outline-3">
-<h3 id="org4043bb1"><span class="section-number-3">1.6</span> Vector Calculus</h3>
+<div id="outline-container-org2ceddc1" class="outline-3">
+<h3 id="org2ceddc1"><span class="section-number-3">1.6</span> Vector Calculus</h3>
 <div class="outline-text-3" id="text-1-6">
 \begin{align*}
 \nabla f &= \partial_i f \mathbf{e}^i\\
@@ -418,8 +420,8 @@ COnsidering:
 </div>
 </div>
 
-<div id="outline-container-org42f1048" class="outline-3">
-<h3 id="org42f1048"><span class="section-number-3">1.7</span> Tensors</h3>
+<div id="outline-container-orge7287df" class="outline-3">
+<h3 id="orge7287df"><span class="section-number-3">1.7</span> Tensors</h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 Someone once said, a tensor is something that transforms like a tensor (Zee, <i>Gravity in a Nutshell</i>). 
@@ -430,8 +432,8 @@ Someone once said, a tensor is something that transforms like a tensor (Zee, <i>
 </p>
 </div>
 
-<div id="outline-container-org2f61516" class="outline-4">
-<h4 id="org2f61516"><span class="section-number-4">1.7.1</span> Contraction</h4>
+<div id="outline-container-org66556e3" class="outline-4">
+<h4 id="org66556e3"><span class="section-number-4">1.7.1</span> Contraction</h4>
 <div class="outline-text-4" id="text-1-7-1">
 <p>
 You pick an index from the top and the bottom to be the same and sum over it, resulting in a tensor which is \( (p-1,q-1)\). 
@@ -443,8 +445,8 @@ Special case: the trace is defined to be: \( \text{tr} A = A^i_i\)
 </div>
 </div>
 
-<div id="outline-container-orgb90296d" class="outline-4">
-<h4 id="orgb90296d"><span class="section-number-4">1.7.2</span> Symmetry and Skew-symmetry</h4>
+<div id="outline-container-orgd1dab84" class="outline-4">
+<h4 id="orgd1dab84"><span class="section-number-4">1.7.2</span> Symmetry and Skew-symmetry</h4>
 <div class="outline-text-4" id="text-1-7-2">
 <p>
 Symmetric and skew symmetric parts are defined respectively as:
@@ -459,8 +461,8 @@ Any tensor can be written as the sum of the symmetric and skew-symmetric parts.
 </div>
 </div>
 
-<div id="outline-container-org94014aa" class="outline-4">
-<h4 id="org94014aa"><span class="section-number-4">1.7.3</span> Partial Derivative</h4>
+<div id="outline-container-orge7ce643" class="outline-4">
+<h4 id="orge7ce643"><span class="section-number-4">1.7.3</span> Partial Derivative</h4>
 <div class="outline-text-4" id="text-1-7-3">
 <p>
 Results in a second term that shows that it does not transform as a covariant tensor.
@@ -470,12 +472,12 @@ Results in a second term that shows that it does not transform as a covariant te
 </div>
 </div>
 
-<div id="outline-container-org6d1e369" class="outline-2">
-<h2 id="org6d1e369"><span class="section-number-2">2</span> Differential Geometry</h2>
+<div id="outline-container-org94075a4" class="outline-2">
+<h2 id="org94075a4"><span class="section-number-2">2</span> Differential Geometry</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org0e73fef" class="outline-3">
-<h3 id="org0e73fef"><span class="section-number-3">2.1</span> Manifold</h3>
+<div id="outline-container-orga899bc5" class="outline-3">
+<h3 id="orga899bc5"><span class="section-number-3">2.1</span> Manifold</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Patches with its own coordinate system that has `instructions' in how to move between the patches. Example: Maps in an Atlas.
@@ -483,8 +485,8 @@ Patches with its own coordinate system that has `instructions' in how to move be
 </div>
 </div>
 
-<div id="outline-container-org064c0d5" class="outline-3">
-<h3 id="org064c0d5"><span class="section-number-3">2.2</span> Metric and Line Element</h3>
+<div id="outline-container-org5d60cb2" class="outline-3">
+<h3 id="org5d60cb2"><span class="section-number-3">2.2</span> Metric and Line Element</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 \[ \langle U, V \rangle = g_{ij} U^i V^j\]
@@ -499,8 +501,8 @@ Then
 </p>
 </div>
 
-<div id="outline-container-orge8ec7b0" class="outline-4">
-<h4 id="orge8ec7b0"><span class="section-number-4">2.2.1</span> Metric Signature</h4>
+<div id="outline-container-orgd0a69f9" class="outline-4">
+<h4 id="orgd0a69f9"><span class="section-number-4">2.2.1</span> Metric Signature</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <p>
 Something like (-,+,+,+).
@@ -508,8 +510,8 @@ Something like (-,+,+,+).
 </div>
 </div>
 
-<div id="outline-container-org1a65d4b" class="outline-4">
-<h4 id="org1a65d4b"><span class="section-number-4">2.2.2</span> Lorentzian Metric</h4>
+<div id="outline-container-orgbe83cd3" class="outline-4">
+<h4 id="orgbe83cd3"><span class="section-number-4">2.2.2</span> Lorentzian Metric</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <p>
 Something with signature of (p,1) or (1,q).
@@ -517,8 +519,8 @@ Something with signature of (p,1) or (1,q).
 </div>
 </div>
 
-<div id="outline-container-orgb459978" class="outline-4">
-<h4 id="orgb459978"><span class="section-number-4">2.2.3</span> Volume of a space</h4>
+<div id="outline-container-org6f1afb6" class="outline-4">
+<h4 id="org6f1afb6"><span class="section-number-4">2.2.3</span> Volume of a space</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <p>
 \[ V = \int \sqrt{|\det{g_{ij}}|}d^nx\]
@@ -526,8 +528,8 @@ Something with signature of (p,1) or (1,q).
 </div>
 </div>
 
-<div id="outline-container-org6273397" class="outline-4">
-<h4 id="org6273397"><span class="section-number-4">2.2.4</span> Minkowski Space</h4>
+<div id="outline-container-org4bcd208" class="outline-4">
+<h4 id="org4bcd208"><span class="section-number-4">2.2.4</span> Minkowski Space</h4>
 <div class="outline-text-4" id="text-2-2-4">
 <p>
 \[ ds^2 = -c^2 dt^2 + dx^2 + dy^2 + dz^2\]
@@ -538,8 +540,8 @@ It is referred to as \(\eta_{ij}\)
 </div>
 </div>
 
-<div id="outline-container-orgf260c15" class="outline-3">
-<h3 id="orgf260c15"><span class="section-number-3">2.3</span> Geodesics</h3>
+<div id="outline-container-org862c151" class="outline-3">
+<h3 id="org862c151"><span class="section-number-3">2.3</span> Geodesics</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 From Lagrangian calculus, the shortest distance is given by: 
@@ -553,8 +555,8 @@ The Lagrangian of the system is:
 </div>
 </div>
 
-<div id="outline-container-org8bac439" class="outline-3">
-<h3 id="org8bac439"><span class="section-number-3">2.4</span> Geodesic and Christoffel Symbol</h3>
+<div id="outline-container-org7606bdc" class="outline-3">
+<h3 id="org7606bdc"><span class="section-number-3">2.4</span> Geodesic and Christoffel Symbol</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 The derivation would give the geodesic equation as:
@@ -578,13 +580,22 @@ Where the Christoffel symbol is defined to be:
 </div>
 </div>
 
-<div id="outline-container-org5eefc39" class="outline-3">
-<h3 id="org5eefc39"><span class="section-number-3">2.5</span> Covariant Derivative</h3>
+<div id="outline-container-orgc86678b" class="outline-3">
+<h3 id="orgc86678b"><span class="section-number-3">2.5</span> Eq. 1.100</h3>
 <div class="outline-text-3" id="text-2-5">
+<p>
+Special case:
+\[ \Gamma^j_{ij} = \Gamma^j_{ji} = \partial_i(\sqrt{\log{|g|}})\]
+</p>
 </div>
-<div id="outline-container-orgaba2114" class="outline-4">
-<h4 id="orgaba2114"><span class="section-number-4">2.5.1</span> Properties</h4>
-<div class="outline-text-4" id="text-2-5-1">
+</div>
+<div id="outline-container-org61b6af7" class="outline-3">
+<h3 id="org61b6af7"><span class="section-number-3">2.6</span> Covariant Derivative</h3>
+<div class="outline-text-3" id="text-2-6">
+</div>
+<div id="outline-container-orgc7094d3" class="outline-4">
+<h4 id="orgc7094d3"><span class="section-number-4">2.6.1</span> Properties</h4>
+<div class="outline-text-4" id="text-2-6-1">
 <ol class="org-ol">
 <li>For smooth function it coincides with partial derivative</li>
 <li>Linear (relates to addition)</li>
@@ -594,9 +605,9 @@ Where the Christoffel symbol is defined to be:
 </div>
 </div>
 
-<div id="outline-container-orgfa6ad5a" class="outline-4">
-<h4 id="orgfa6ad5a"><span class="section-number-4">2.5.2</span> Metricity</h4>
-<div class="outline-text-4" id="text-2-5-2">
+<div id="outline-container-org1e0f036" class="outline-4">
+<h4 id="org1e0f036"><span class="section-number-4">2.6.2</span> Metricity</h4>
+<div class="outline-text-4" id="text-2-6-2">
 <p>
 Covariant derivative is metric compatitable if it satisfies:
 \[ \nabla_a g_{ij} = 0\] 
@@ -604,9 +615,9 @@ Covariant derivative is metric compatitable if it satisfies:
 </div>
 </div>
 
-<div id="outline-container-org2d04190" class="outline-4">
-<h4 id="org2d04190"><span class="section-number-4">2.5.3</span> Torsion</h4>
-<div class="outline-text-4" id="text-2-5-3">
+<div id="outline-container-orgb242aa0" class="outline-4">
+<h4 id="orgb242aa0"><span class="section-number-4">2.6.3</span> Torsion</h4>
+<div class="outline-text-4" id="text-2-6-3">
 <p>
 Torsion-free is defined by:
 \[ \nabla_a \nabla_b f - \nabla_b \nabla_a f = 0\]
@@ -614,9 +625,9 @@ Torsion-free is defined by:
 </div>
 </div>
 
-<div id="outline-container-orgc97e2e6" class="outline-4">
-<h4 id="orgc97e2e6"><span class="section-number-4">2.5.4</span> Uniqueness of the Covariant Derivative</h4>
-<div class="outline-text-4" id="text-2-5-4">
+<div id="outline-container-org279b054" class="outline-4">
+<h4 id="org279b054"><span class="section-number-4">2.6.4</span> Uniqueness of the Covariant Derivative</h4>
+<div class="outline-text-4" id="text-2-6-4">
 <p>
 If the covariant derivative is:
 </p>
@@ -634,9 +645,9 @@ The proof is on page 36, requires writing out the torsion and writing out the CD
 </div>
 </div>
 
-<div id="outline-container-org1b304e5" class="outline-4">
-<h4 id="org1b304e5"><span class="section-number-4">2.5.5</span> Important Formulas</h4>
-<div class="outline-text-4" id="text-2-5-5">
+<div id="outline-container-org20020d7" class="outline-4">
+<h4 id="org20020d7"><span class="section-number-4">2.6.5</span> Important Formulas</h4>
+<div class="outline-text-4" id="text-2-6-5">
 \begin{align*}
 \nabla_a A^b &= \partial_a A^b + \Gamma^b_{ac}A^c\\
 \nabla_a A_b &=  \partial_a A^b - \Gamma^b_{ac}A^c\\
@@ -648,9 +659,9 @@ The proof is on page 36, requires writing out the torsion and writing out the CD
 </div>
 </div>
 
-<div id="outline-container-orga8a8c95" class="outline-3">
-<h3 id="orga8a8c95"><span class="section-number-3">2.6</span> Parallel Transport</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-orgae97c3e" class="outline-3">
+<h3 id="orgae97c3e"><span class="section-number-3">2.7</span> Parallel Transport</h3>
+<div class="outline-text-3" id="text-2-7">
 <ul class="org-ul">
 <li>\( C\) is a curve</li>
 <li>\( T^a\) is a tangent vector</li>
@@ -669,9 +680,9 @@ Alternative form:
 </div>
 </div>
 
-<div id="outline-container-orgd189212" class="outline-3">
-<h3 id="orgd189212"><span class="section-number-3">2.7</span> Geodesic and Parallel Transport</h3>
-<div class="outline-text-3" id="text-2-7">
+<div id="outline-container-orgb3fe2ca" class="outline-3">
+<h3 id="orgb3fe2ca"><span class="section-number-3">2.8</span> Geodesic and Parallel Transport</h3>
+<div class="outline-text-3" id="text-2-8">
 <p>
 \[ T^a \nabla_a T^b = 0\]
 </p>
@@ -682,9 +693,9 @@ defines a geodesic.
 </div>
 </div>
 
-<div id="outline-container-org8f205b1" class="outline-3">
-<h3 id="org8f205b1"><span class="section-number-3">2.8</span> Riemann Curvature Tensor</h3>
-<div class="outline-text-3" id="text-2-8">
+<div id="outline-container-org060d534" class="outline-3">
+<h3 id="org060d534"><span class="section-number-3">2.9</span> Riemann Curvature Tensor</h3>
+<div class="outline-text-3" id="text-2-9">
 <p>
 This is motivated by the difference when parallelly transporting a vector through different paths in a parallelogram in curved space. The difference is related to the torsion. With:
 </p>
@@ -725,9 +736,9 @@ For order two tensor:
 </div>
 
 
-<div id="outline-container-org468cc92" class="outline-3">
-<h3 id="org468cc92"><span class="section-number-3">2.9</span> Cross tensor thingy?</h3>
-<div class="outline-text-3" id="text-2-9">
+<div id="outline-container-org18b3594" class="outline-3">
+<h3 id="org18b3594"><span class="section-number-3">2.10</span> Cross tensor thingy?</h3>
+<div class="outline-text-3" id="text-2-10">
 <p>
 Note that:
 \[ \nabla_i A_j - \nabla_j A_i = \partial_i A_j - \partial_j A_i\]
@@ -748,9 +759,9 @@ Which can be proven by writing three of the above with cycled permutations and a
 </div>
 </div>
 
-<div id="outline-container-orgec0f065" class="outline-3">
-<h3 id="orgec0f065"><span class="section-number-3">2.10</span> Riemann Tensor Identities</h3>
-<div class="outline-text-3" id="text-2-10">
+<div id="outline-container-orgf341ae6" class="outline-3">
+<h3 id="orgf341ae6"><span class="section-number-3">2.11</span> Riemann Tensor Identities</h3>
+<div class="outline-text-3" id="text-2-11">
 <ol class="org-ol">
 <li>\( R_{abcd} = -R_{bacd}\)</li>
 <li>\( R_{abcd} = -R_{abdc}\)</li>
@@ -760,9 +771,9 @@ Which can be proven by writing three of the above with cycled permutations and a
 </div>
 </div>
 
-<div id="outline-container-orgf4979cf" class="outline-3">
-<h3 id="orgf4979cf"><span class="section-number-3">2.11</span> W property</h3>
-<div class="outline-text-3" id="text-2-11">
+<div id="outline-container-orgf786f25" class="outline-3">
+<h3 id="orgf786f25"><span class="section-number-3">2.12</span> W property</h3>
+<div class="outline-text-3" id="text-2-12">
 <p>
 If a tensor satisfies the above 3 identities, then it satisfies:
 \[ W_{abcd} = W_{cdab}\]
@@ -770,9 +781,9 @@ If a tensor satisfies the above 3 identities, then it satisfies:
 </div>
 </div>
 
-<div id="outline-container-org26dae22" class="outline-3">
-<h3 id="org26dae22"><span class="section-number-3">2.12</span> Ricci Tensor and Ricci Scalar</h3>
-<div class="outline-text-3" id="text-2-12">
+<div id="outline-container-org077bc75" class="outline-3">
+<h3 id="org077bc75"><span class="section-number-3">2.13</span> Ricci Tensor and Ricci Scalar</h3>
+<div class="outline-text-3" id="text-2-13">
 <p>
 The Ricci tensor is:
 \[ R_{ab} = R_{acb}^c\]
@@ -792,9 +803,19 @@ The Ricci Scalar (scalar curvature) is defined by:
 </div>
 </div>
 
-<div id="outline-container-org29f450a" class="outline-3">
-<h3 id="org29f450a"><span class="section-number-3">2.13</span> Einstein Tensor</h3>
-<div class="outline-text-3" id="text-2-13">
+<div id="outline-container-org5167ca6" class="outline-3">
+<h3 id="org5167ca6"><span class="section-number-3">2.14</span> Curvature</h3>
+<div class="outline-text-3" id="text-2-14">
+<ul class="org-ul">
+<li>Space of constant negative curvature (\(R<0\)) are hyperbolic spaces (saddles)</li>
+<li>Space of constant positive curvature (\(R>0\)) are spherical space (spheres)</li>
+<li>Space of zero curvature (\(R=0\)) are flat spaces</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org544459a" class="outline-3">
+<h3 id="org544459a"><span class="section-number-3">2.15</span> Einstein Tensor</h3>
+<div class="outline-text-3" id="text-2-15">
 <p>
 This is given by:
 </p>
@@ -813,9 +834,9 @@ which satisfies:
 </div>
 </div>
 
-<div id="outline-container-org837a84f" class="outline-3">
-<h3 id="org837a84f"><span class="section-number-3">2.14</span> Geodesic Deviation</h3>
-<div class="outline-text-3" id="text-2-14">
+<div id="outline-container-org3cec017" class="outline-3">
+<h3 id="org3cec017"><span class="section-number-3">2.16</span> Geodesic Deviation</h3>
+<div class="outline-text-3" id="text-2-16">
 <p>
 For tangent vector \(T^a\) and the vector which connects nearby curves \(N^a\), the covariant derivative form states: 
 \[ T^i \nabla_i N^a = N^i \nabla_i T^a\]
@@ -834,12 +855,13 @@ In other forms:
 </div>
 
 
-<div id="outline-container-orga9c7ee7" class="outline-2">
-<h2 id="orga9c7ee7"><span class="section-number-2">3</span> Einstein Field Equations</h2>
+
+<div id="outline-container-org1961f9e" class="outline-2">
+<h2 id="org1961f9e"><span class="section-number-2">3</span> Einstein Field Equations</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org7414124" class="outline-3">
-<h3 id="org7414124"><span class="section-number-3">3.1</span> Stress-Energy Tensors</h3>
+<div id="outline-container-orgec09f17" class="outline-3">
+<h3 id="orgec09f17"><span class="section-number-3">3.1</span> Stress-Energy Tensors</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 The stress-energy tensor is a diagonal tensor: \(T^{ij} = \text{diag}{(\rho c^2,p,p,p)}\).
@@ -856,8 +878,8 @@ With a velocity vector \(u^a\), in which \(\eta_{ij}u^i u^j = -1\):
 </div>
 
 
-<div id="outline-container-org0e77301" class="outline-3">
-<h3 id="org0e77301"><span class="section-number-3">3.2</span> Geodesics and Newton's Law</h3>
+<div id="outline-container-orgd1848ff" class="outline-3">
+<h3 id="orgd1848ff"><span class="section-number-3">3.2</span> Geodesics and Newton's Law</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Comparing the geodesic equation and Newton's second law yields the identification that:
@@ -893,8 +915,8 @@ The static line element is:
 </div>
 </div>
 
-<div id="outline-container-org506d460" class="outline-3">
-<h3 id="org506d460"><span class="section-number-3">3.3</span> Curvature in vacuum</h3>
+<div id="outline-container-org55df5e6" class="outline-3">
+<h3 id="org55df5e6"><span class="section-number-3">3.3</span> Curvature in vacuum</h3>
 <div class="outline-text-3" id="text-3-3">
 <p>
 The geodesic deviation equation can be used to show that:
@@ -906,8 +928,8 @@ The geodesic deviation equation can be used to show that:
 </div>
 </div>
 
-<div id="outline-container-org4106b73" class="outline-3">
-<h3 id="org4106b73"><span class="section-number-3">3.4</span> Einstein Field Equations</h3>
+<div id="outline-container-org50c9856" class="outline-3">
+<h3 id="org50c9856"><span class="section-number-3">3.4</span> Einstein Field Equations</h3>
 <div class="outline-text-3" id="text-3-4">
 <p>
 The energy-momentum conservation equation states that:
@@ -935,8 +957,8 @@ Multiply by \(g^{ij}\) gives \(-R = \kappa T\) where \(T = g^{ij}T_{ij}\) is the
 </div>
 </div>
 
-<div id="outline-container-org08d8aef" class="outline-3">
-<h3 id="org08d8aef"><span class="section-number-3">3.5</span> Minimal Coupling</h3>
+<div id="outline-container-orgf076c0d" class="outline-3">
+<h3 id="orgf076c0d"><span class="section-number-3">3.5</span> Minimal Coupling</h3>
 <div class="outline-text-3" id="text-3-5">
 <p>
 Basically to make GR consistent with SR, replace partial derivatives with covariant ones and replace Minkowski by a general metric. But this leads to issue in deriving Maxwell's Equation. (Rewrite \(F^{ij}\) in terms of A with the cross tensor thingy, and you can replace the partials with covariants before or after, leading to different results.)
@@ -944,8 +966,8 @@ Basically to make GR consistent with SR, replace partial derivatives with covari
 </div>
 </div>
 
-<div id="outline-container-org6594ff6" class="outline-3">
-<h3 id="org6594ff6"><span class="section-number-3">3.6</span> Linearised Riemann and Ricci Tensors</h3>
+<div id="outline-container-orgbc97a41" class="outline-3">
+<h3 id="orgbc97a41"><span class="section-number-3">3.6</span> Linearised Riemann and Ricci Tensors</h3>
 <div class="outline-text-3" id="text-3-6">
 <p>
 The pertubation metric and its inverse is given by:
@@ -979,8 +1001,8 @@ The trace-reversed tensor:
 </div>
 </div>
 
-<div id="outline-container-org6b509a0" class="outline-3">
-<h3 id="org6b509a0"><span class="section-number-3">3.7</span> SOme bullshit&#x2026;</h3>
+<div id="outline-container-org6e83918" class="outline-3">
+<h3 id="org6e83918"><span class="section-number-3">3.7</span> SOme bullshit&#x2026;</h3>
 <div class="outline-text-3" id="text-3-7">
 <p>
 \[ \kappa = \frac{8\pi G}{c^4}\]
@@ -988,8 +1010,8 @@ The trace-reversed tensor:
 </div>
 </div>
 
-<div id="outline-container-org23eebb5" class="outline-3">
-<h3 id="org23eebb5"><span class="section-number-3">3.8</span> Gravitational Waves</h3>
+<div id="outline-container-orgbbffb32" class="outline-3">
+<h3 id="orgbbffb32"><span class="section-number-3">3.8</span> Gravitational Waves</h3>
 <div class="outline-text-3" id="text-3-8">
 <p>
 The linearised field equations become:
@@ -1009,12 +1031,12 @@ which has a solution of:
 
 
 
-<div id="outline-container-orgdca089f" class="outline-2">
-<h2 id="orgdca089f"><span class="section-number-2">4</span> Schwarzschild Solutions</h2>
+<div id="outline-container-org70daeb1" class="outline-2">
+<h2 id="org70daeb1"><span class="section-number-2">4</span> Schwarzschild Solutions</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgc71db4e" class="outline-3">
-<h3 id="orgc71db4e"><span class="section-number-3">4.1</span> Schwarzschild Solution</h3>
+<div id="outline-container-orge3efec8" class="outline-3">
+<h3 id="orge3efec8"><span class="section-number-3">4.1</span> Schwarzschild Solution</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 The most general spherically symmetric metric in vacuum is in the form:
@@ -1040,8 +1062,8 @@ G_{33} &= sin^2\theta G_{22}
 </div>
 </div>
 
-<div id="outline-container-org0a8aef6" class="outline-3">
-<h3 id="org0a8aef6"><span class="section-number-3">4.2</span> Schwarzschild Radius</h3>
+<div id="outline-container-org82f074d" class="outline-3">
+<h3 id="org82f074d"><span class="section-number-3">4.2</span> Schwarzschild Radius</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 \[ r_S = \frac{2GM}{c^2}\]
@@ -1049,8 +1071,8 @@ G_{33} &= sin^2\theta G_{22}
 </div>
 </div>
 
-<div id="outline-container-org25aa9fb" class="outline-3">
-<h3 id="org25aa9fb"><span class="section-number-3">4.3</span> Schwarzschild Metric under Cartesian Coordinates</h3>
+<div id="outline-container-org77dbf8e" class="outline-3">
+<h3 id="org77dbf8e"><span class="section-number-3">4.3</span> Schwarzschild Metric under Cartesian Coordinates</h3>
 <div class="outline-text-3" id="text-4-3">
 <p>
 \[ ds^2 = -\frac{(1-\frac{M}{2r})^2}{(1+\frac{M}{2r})^2}dt^2 + \left(1+\frac{M}{2r}\right)^4(dx^2+dy^2+dz^2)\]
@@ -1058,8 +1080,8 @@ G_{33} &= sin^2\theta G_{22}
 </div>
 </div>
 
-<div id="outline-container-orgb1c6224" class="outline-3">
-<h3 id="orgb1c6224"><span class="section-number-3">4.4</span> Geodesics in Schwarzschild Spacetime</h3>
+<div id="outline-container-orgfd7718d" class="outline-3">
+<h3 id="orgfd7718d"><span class="section-number-3">4.4</span> Geodesics in Schwarzschild Spacetime</h3>
 <div class="outline-text-3" id="text-4-4">
 <p>
 The Lagrangian is given by:
@@ -1095,8 +1117,8 @@ This is useful in orbits for example where the potential will have a stationary 
 </p>
 </div>
 
-<div id="outline-container-orgf493a92" class="outline-4">
-<h4 id="orgf493a92"><span class="section-number-4">4.4.1</span> Setting the Lagrangian</h4>
+<div id="outline-container-org4d6efd5" class="outline-4">
+<h4 id="org4d6efd5"><span class="section-number-4">4.4.1</span> Setting the Lagrangian</h4>
 <div class="outline-text-4" id="text-4-4-1">
 <ul class="org-ul">
 <li>\( L = -1 \) for massive particles</li>
@@ -1107,12 +1129,12 @@ This is useful in orbits for example where the potential will have a stationary 
 </div>
 
 
-<div id="outline-container-org844c2ec" class="outline-3">
-<h3 id="org844c2ec"><span class="section-number-3">4.5</span> Hints for Solving Geodesics</h3>
+<div id="outline-container-orgc76b11c" class="outline-3">
+<h3 id="orgc76b11c"><span class="section-number-3">4.5</span> Hints for Solving Geodesics</h3>
 <div class="outline-text-3" id="text-4-5">
 </div>
-<div id="outline-container-org95e3f86" class="outline-4">
-<h4 id="org95e3f86"><span class="section-number-4">4.5.1</span> Mercury Perihelion Precession</h4>
+<div id="outline-container-orgbb7e004" class="outline-4">
+<h4 id="orgbb7e004"><span class="section-number-4">4.5.1</span> Mercury Perihelion Precession</h4>
 <div class="outline-text-4" id="text-4-5-1">
 <ul class="org-ul">
 <li>Use substitution \(u = \frac{1}{r}\)</li>
@@ -1121,8 +1143,8 @@ This is useful in orbits for example where the potential will have a stationary 
 </ul>
 </div>
 </div>
-<div id="outline-container-org09edf14" class="outline-4">
-<h4 id="org09edf14"><span class="section-number-4">4.5.2</span> Light Deflection by the Sun</h4>
+<div id="outline-container-org53d1568" class="outline-4">
+<h4 id="org53d1568"><span class="section-number-4">4.5.2</span> Light Deflection by the Sun</h4>
 <div class="outline-text-4" id="text-4-5-2">
 <ul class="org-ul">
 <li>Same as step 1 before</li>
@@ -1132,8 +1154,8 @@ This is useful in orbits for example where the potential will have a stationary 
 </div>
 </div>
 
-<div id="outline-container-org3017c6c" class="outline-3">
-<h3 id="org3017c6c"><span class="section-number-3">4.6</span> Brief Summary on Attacking Problems</h3>
+<div id="outline-container-org2be66d1" class="outline-3">
+<h3 id="org2be66d1"><span class="section-number-3">4.6</span> Brief Summary on Attacking Problems</h3>
 <div class="outline-text-3" id="text-4-6">
 <ul class="org-ul">
 <li>\( l =0 \) if no angular momentum</li>
@@ -1146,7 +1168,7 @@ This is useful in orbits for example where the potential will have a stationary 
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kelvin Ho</p>
-<p class="date">Created: 2022-05-07 Sat 01:08</p>
+<p class="date">Created: 2022-05-08 Sun 23:40</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

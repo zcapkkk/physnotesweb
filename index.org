@@ -16,3 +16,4 @@ Note: Please forgive me for putting "it can be shown that..." everywhere - I hat
 - [[file:em.html][PHAS0038 Electromagnetic Theory]]
 - [[file:pp.html][PHAS0040 Nuclear and Particle Physics]]
 - [[file:gr.html][MATH0025 General Relativity]]
+- [[ds.html][PHAS0049 Theory of Dynamical Systems]]
