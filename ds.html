@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-05-09 Mon 18:50 -->
+<!-- 2022-05-20 Fri 22:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Overview (per week) of Dynamical Systems</title>
@@ -161,6 +161,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -185,7 +198,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -256,108 +269,246 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc5c031f">1. Week 1</a>
+<li><a href="#org4895511">1. Classification of 2D Systems</a>
 <ul>
-<li><a href="#org5059d7e">1.1. Euler Lagrange Equations</a></li>
-</ul>
-</li>
-<li><a href="#org630eb7d">2. Week 2</a>
+<li><a href="#orgd433d9e">1.1. Eigenvalues Approach</a>
 <ul>
-<li><a href="#orgbc1dce7">2.1. Hamiltonian</a></li>
-<li><a href="#org1898bf6">2.2. Hamilton's Equations</a></li>
-<li><a href="#org8c293fa">2.3. Hamiltonian Systems</a></li>
-<li><a href="#orgcba0f99">2.4. Conserved Quantities</a></li>
-<li><a href="#org906de09">2.5. Poisson Brackets</a>
-<ul>
-<li><a href="#org7fcfc0a">2.5.1. Properties of Poisson Brackets</a></li>
-</ul>
-</li>
-<li><a href="#org6317beb">2.6. Phase Space</a></li>
-<li><a href="#org41b80a2">2.7. Liouville's Theorem</a></li>
-</ul>
-</li>
-<li><a href="#org93a1941">3. Week 3</a>
-<ul>
-<li><a href="#org4607504">3.1. Hamiltonian</a></li>
-<li><a href="#orgeafff83">3.2. Bead on Rotating Loop</a></li>
-<li><a href="#orgb617eed">3.3. Small Oscillations</a></li>
-<li><a href="#org0e4775f">3.4. Carbon Dioxide example</a></li>
-<li><a href="#orga69770a">3.5. Classical Field Theory</a></li>
-<li><a href="#org6ec5d12">3.6. Important formulas:</a></li>
-</ul>
-</li>
-<li><a href="#org7ef149c">4. Week 4</a>
-<ul>
-<li><a href="#orgfe58edf">4.1. ODEs</a>
-<ul>
-<li><a href="#org54e17ac">4.1.1. Coupled DEs</a></li>
-<li><a href="#orgd497d54">4.1.2. Equivalent system of 1st Order ODEs</a></li>
-<li><a href="#orgfbd9bbc">4.1.3. Existence and Uniqueness</a></li>
-<li><a href="#org4e6fda1">4.1.4. Fixed Points</a></li>
+<li><a href="#org2c818b5">1.1.1. Real Eigenvalues</a></li>
+<li><a href="#orgcda410d">1.1.2. Complex Eigenvalues</a></li>
+<li><a href="#orgdf88fd4">1.1.3. Special Cases</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orge2323aa">5. Week 5</a>
+<li><a href="#org94f41e3">2. Week 1</a>
 <ul>
-<li><a href="#orge459130">5.1. Jordan Form</a></li>
-<li><a href="#org0e8e35f">5.2. Rabbits growth</a></li>
+<li><a href="#orgf2f27db">2.1. Euler Lagrange Equations</a></li>
 </ul>
 </li>
-<li><a href="#orgf6d658f">6. Week 6</a>
+<li><a href="#orgf6faade">3. Week 2</a>
 <ul>
-<li><a href="#org5cb2d17">6.1. Stability of a point in phase space</a></li>
-<li><a href="#org7cdadbb">6.2. Liapunov Stability Theorem</a></li>
-<li><a href="#orgceb97be">6.3. Limit Cycles</a></li>
-<li><a href="#org7e9da1c">6.4. Poincare Bendixson Theorem</a></li>
-<li><a href="#org4a8620b">6.5. Linearisation (Hartman-Grobman) Theorem</a></li>
-<li><a href="#org745cb1e">6.6. Symmetry</a></li>
-<li><a href="#orgdd56061">6.7. Additional Examples from lectures:</a></li>
+<li><a href="#org44d0fa6">3.1. Hamiltonian</a></li>
+<li><a href="#org63d6b25">3.2. Hamilton's Equations</a></li>
+<li><a href="#orgbb34ebf">3.3. Hamiltonian Systems</a></li>
+<li><a href="#org34d55c4">3.4. Conserved Quantities</a></li>
+<li><a href="#orgf5d0c47">3.5. Poisson Brackets</a>
+<ul>
+<li><a href="#orga2dee5f">3.5.1. Properties of Poisson Brackets</a></li>
 </ul>
 </li>
-<li><a href="#org25576c8">7. Week 7</a>
-<ul>
-<li><a href="#org04f8159">7.1. Conserved quantities</a></li>
-<li><a href="#org051ffca">7.2. Fist integrals and conservative system</a>
-<ul>
-<li><a href="#org0167dfc">7.2.1. Example 1</a></li>
-<li><a href="#org3e6570d">7.2.2. Example 2</a></li>
-<li><a href="#org553f1c2">7.2.3. Example 3</a></li>
-<li><a href="#orga2d1719">7.2.4. Questions</a></li>
+<li><a href="#org1194e59">3.6. Phase Space</a></li>
+<li><a href="#org7a955ea">3.7. Liouville's Theorem</a></li>
 </ul>
 </li>
-<li><a href="#orged44510">7.3. Theorem: No attracting or repelling fixed points in conservative systems</a></li>
-<li><a href="#org4c7ffb7">7.4. First Integrals and Trajectories</a></li>
-<li><a href="#org3c90f0f">7.5. Nonlinear Pendulum</a></li>
-</ul>
-</li>
-<li><a href="#org3037951">8. Week 8</a>
+<li><a href="#org691e873">4. Week 3</a>
 <ul>
-<li><a href="#orge19359c">8.1. Bifurcations</a></li>
-<li><a href="#org37ff285">8.2. Analysis</a></li>
-<li><a href="#org5b3be07">8.3. Bifurcation Diagram</a></li>
-<li><a href="#org57989f0">8.4. Pitchfork Bifurcation</a></li>
-<li><a href="#org2b17d25">8.5. General Comments</a></li>
-<li><a href="#org5a98987">8.6. Bifurcations in 2D</a></li>
-<li><a href="#orgdd280a8">8.7. Hopf Bifurcation</a></li>
+<li><a href="#org89220a4">4.1. Hamiltonian</a></li>
+<li><a href="#org6f094c9">4.2. Bead on Rotating Loop</a></li>
+<li><a href="#org5e28fd8">4.3. Small Oscillations</a></li>
+<li><a href="#org397d122">4.4. Carbon Dioxide example</a></li>
+<li><a href="#orgce847a7">4.5. Classical Field Theory</a></li>
+<li><a href="#orgf595162">4.6. Important formulas:</a></li>
 </ul>
 </li>
-<li><a href="#org1f87f64">9. Week 9 &amp; 10</a>
+<li><a href="#orgdc1ca02">5. Week 4</a>
 <ul>
-<li><a href="#orga90f240">9.1. Lorenz Equations</a></li>
-<li><a href="#orge1b121e">9.2. Discrete Maps</a></li>
+<li><a href="#orgb0260e3">5.1. ODEs</a>
+<ul>
+<li><a href="#org1d5e05c">5.1.1. Coupled DEs</a></li>
+<li><a href="#orgb29cfea">5.1.2. Equivalent system of 1st Order ODEs</a></li>
+<li><a href="#orgfac1609">5.1.3. Existence and Uniqueness</a></li>
+<li><a href="#org1c6354a">5.1.4. Fixed Points</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#org633ba37">6. Week 5</a>
+<ul>
+<li><a href="#org415d568">6.1. Jordan Form</a></li>
+<li><a href="#org9fbe4cc">6.2. Rabbits growth</a></li>
+</ul>
+</li>
+<li><a href="#org5ea5a00">7. Week 6</a>
+<ul>
+<li><a href="#org5b6780a">7.1. Stability of a point in phase space</a></li>
+<li><a href="#org99868f7">7.2. Liapunov Stability Theorem</a></li>
+<li><a href="#orge248037">7.3. Limit Cycles</a></li>
+<li><a href="#orgcd65356">7.4. Poincare Bendixson Theorem</a></li>
+<li><a href="#orgb8770b5">7.5. Linearisation (Hartman-Grobman) Theorem</a></li>
+<li><a href="#orga831e86">7.6. Symmetry</a></li>
+<li><a href="#org4a15035">7.7. Additional Examples from lectures:</a></li>
+</ul>
+</li>
+<li><a href="#org4e942c2">8. Week 7</a>
+<ul>
+<li><a href="#org45499c2">8.1. Conserved quantities</a></li>
+<li><a href="#orga9e187e">8.2. Fist integrals and conservative system</a>
+<ul>
+<li><a href="#orgae2bbfd">8.2.1. Example 1</a></li>
+<li><a href="#org963c68f">8.2.2. Example 2</a></li>
+<li><a href="#orge125789">8.2.3. Example 3</a></li>
+<li><a href="#org4110d03">8.2.4. Questions</a></li>
+</ul>
+</li>
+<li><a href="#orgbf6040b">8.3. Theorem: No attracting or repelling fixed points in conservative systems</a></li>
+<li><a href="#org1772fde">8.4. First Integrals and Trajectories</a></li>
+<li><a href="#orgf898c10">8.5. Nonlinear Pendulum</a></li>
+</ul>
+</li>
+<li><a href="#org86a055e">9. Week 8</a>
+<ul>
+<li><a href="#org35c1b95">9.1. Bifurcations</a></li>
+<li><a href="#orge294714">9.2. Analysis</a></li>
+<li><a href="#org512ddcd">9.3. Bifurcation Diagram</a></li>
+<li><a href="#org6832ca6">9.4. Pitchfork Bifurcation</a></li>
+<li><a href="#org1836a70">9.5. General Comments</a></li>
+<li><a href="#orgd9959b9">9.6. Bifurcations in 2D</a></li>
+<li><a href="#org415c85d">9.7. Hopf Bifurcation</a></li>
+</ul>
+</li>
+<li><a href="#org8d6df91">10. Week 9 &amp; 10</a>
+<ul>
+<li><a href="#org3386607">10.1. Lorenz Equations</a></li>
+<li><a href="#org8378f40">10.2. Discrete Maps</a></li>
+</ul>
+</li>
+<li><a href="#org2419bb3">11. Additional</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc5c031f" class="outline-2">
-<h2 id="orgc5c031f"><span class="section-number-2">1</span> Week 1</h2>
+
+<div id="outline-container-org4895511" class="outline-2">
+<h2 id="org4895511"><span class="section-number-2">1</span> Classification of 2D Systems</h2>
 <div class="outline-text-2" id="text-1">
+<p>
+Alternative form for eigenvalue: 
+\[ \lambda_{1,2} = \frac12\left(\text{tr}G \pm \sqrt{\text{tr}^2 G - 4\text{det}G}\right)\]
+</p>
 </div>
-<div id="outline-container-org5059d7e" class="outline-3">
-<h3 id="org5059d7e"><span class="section-number-3">1.1</span> Euler Lagrange Equations</h3>
+
+<div id="outline-container-orgd433d9e" class="outline-3">
+<h3 id="orgd433d9e"><span class="section-number-3">1.1</span> Eigenvalues Approach</h3>
 <div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org2c818b5" class="outline-4">
+<h4 id="org2c818b5"><span class="section-number-4">1.1.1</span> Real Eigenvalues</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li><a href="#org418cb8b">Positive; different magnitude</a></li>
+<li><a href="#org433546d">Negative; different magnitude</a></li>
+<li><a href="#org2232582">Equal and positive</a></li>
+<li><a href="#orge25b7e0">Equal and negative</a></li>
+<li><a href="#org220764e">Different in signs</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcda410d" class="outline-4">
+<h4 id="orgcda410d"><span class="section-number-4">1.1.2</span> Complex Eigenvalues</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ul class="org-ul">
+<li><a href="#org6ded9e7">Conjugate but positive real:\(\lambda_1 = \lambda_2^*\)</a></li>
+<li><a href="#orgaf11720">Conjugate but negative real:\(\lambda_1 = \lambda_2^*\)</a></li>
+<li><a href="#orgbe7dfe6">Differing in signs</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdf88fd4" class="outline-4">
+<h4 id="orgdf88fd4"><span class="section-number-4">1.1.3</span> Special Cases</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<ul class="org-ul">
+<li><a href="#org717f3e4">Equal, one unique eigenvector, \(\lambda=\text{tr}G/2>0\)</a></li>
+<li><a href="#org0abc8cd">Equal, one unique eigenvector, \(\lambda=\text{tr}G/2<0\)</a></li>
+</ul>
+</div>
+
+
+
+<ol class="org-ol">
+<li><a id="org418cb8b"></a>Unstable Node<br />
+<div class="outline-text-5" id="text-1-1-3-1">
+<ul class="org-ul">
+<li>\(\lambda_1 \neq \lambda_2 < 0\)</li>
+<li>\(\Delta > 0\)</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org433546d"></a>Stable Node<br />
+<div class="outline-text-5" id="text-1-1-3-2">
+<ul class="org-ul">
+<li>\(\lambda_1 \neq \lambda_2 > 0\)</li>
+<li>\(\Delta > 0, \text{tr}G < 0\)</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org2232582"></a>Unstable Star<br />
+<div class="outline-text-5" id="text-1-1-3-3">
+<ul class="org-ul">
+<li>\(\lambda_1 = \lambda_2 = \lambda\)</li>
+<li>\(\Delta = 0\)</li>
+<li>Proportional to identity matrix</li>
+<li>Independent eigenvectors and corresponds with axes</li>
+</ul>
+</div>
+</li>
+<li><a id="orge25b7e0"></a>Stable Star<br />
+<div class="outline-text-5" id="text-1-1-3-4">
+<ul class="org-ul">
+<li>Same as above but single negative eigenvalue</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org6ded9e7"></a>Unstable Focus<br />
+<div class="outline-text-5" id="text-1-1-3-5">
+<ul class="org-ul">
+<li>\(\lambda_1 = \lambda_2 ^*\)</li>
+<li>\(\lambda_{1,2} = \alpha \pm i\beta\)</li>
+<li>No preferred direction, spirals and diverges out from fixed point</li>
+<li>\(\beta >> \alpha\) results in tighter spiral</li>
+</ul>
+</div>
+</li>
+
+<li><a id="orgaf11720"></a>Stable Focus<br />
+<div class="outline-text-5" id="text-1-1-3-6">
+<ul class="org-ul">
+<li>\( Re\lambda_i = \alpha < 0\)</li>
+<li>Converge to the fixed point</li>
+</ul>
+</div>
+</li>
+
+<li><a id="org717f3e4"></a>Unstable Improper Node<br />
+<div class="outline-text-5" id="text-1-1-3-7">
+<ul class="org-ul">
+<li></li>
+</ul>
+</div>
+</li>
+
+<li><a id="org0abc8cd"></a>Stable Improper Node<br /></li>
+
+<li><a id="org220764e"></a>Saddle Point<br /></li>
+
+<li><a id="orgbe7dfe6"></a>Center<br /></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org94f41e3" class="outline-2">
+<h2 id="org94f41e3"><span class="section-number-2">2</span> Week 1</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgf2f27db" class="outline-3">
+<h3 id="orgf2f27db"><span class="section-number-3">2.1</span> Euler Lagrange Equations</h3>
+<div class="outline-text-3" id="text-2-1">
 <p>
 If there are k constraints, there are \(k\)  equations which are functions
 of the coordinates of each of the \(N\) particles.
@@ -376,13 +527,13 @@ coordinates.
 </div>
 </div>
 </div>
-<div id="outline-container-org630eb7d" class="outline-2">
-<h2 id="org630eb7d"><span class="section-number-2">2</span> Week 2</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgf6faade" class="outline-2">
+<h2 id="orgf6faade"><span class="section-number-2">3</span> Week 2</h2>
+<div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-orgbc1dce7" class="outline-3">
-<h3 id="orgbc1dce7"><span class="section-number-3">2.1</span> Hamiltonian</h3>
-<div class="outline-text-3" id="text-2-1">
+<div id="outline-container-org44d0fa6" class="outline-3">
+<h3 id="org44d0fa6"><span class="section-number-3">3.1</span> Hamiltonian</h3>
+<div class="outline-text-3" id="text-3-1">
 <ul class="org-ul">
 <li>This is given as the Legendre transformation of the Lagrangian:</li>
 <li>\(H = \sum p_i \dot{q_i} - L_i\)</li>
@@ -396,9 +547,9 @@ coordinates.
 </ul>
 </div>
 </div>
-<div id="outline-container-org1898bf6" class="outline-3">
-<h3 id="org1898bf6"><span class="section-number-3">2.2</span> Hamilton's Equations</h3>
-<div class="outline-text-3" id="text-2-2">
+<div id="outline-container-org63d6b25" class="outline-3">
+<h3 id="org63d6b25"><span class="section-number-3">3.2</span> Hamilton's Equations</h3>
+<div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>\(\frac{\partial H}{\partial p_i} = \dot{q_i}\)</li>
 <li>\(\frac{\partial H}{\partial q_i} = -\dot{p_i}\)</li>
@@ -407,18 +558,18 @@ coordinates.
 </ul>
 </div>
 </div>
-<div id="outline-container-org8c293fa" class="outline-3">
-<h3 id="org8c293fa"><span class="section-number-3">2.3</span> Hamiltonian Systems</h3>
-<div class="outline-text-3" id="text-2-3">
+<div id="outline-container-orgbb34ebf" class="outline-3">
+<h3 id="orgbb34ebf"><span class="section-number-3">3.3</span> Hamiltonian Systems</h3>
+<div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>Dynamical systems are given by: \(\dot{q}=F_1(q,p), \quad \dot{p}=F_2(q,p)\)</li>
 <li>It is Hamiltonian if \(\frac{\partial F_1}{\partial q} + \frac{\partial F_2}{\partial p}=0\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgcba0f99" class="outline-3">
-<h3 id="orgcba0f99"><span class="section-number-3">2.4</span> Conserved Quantities</h3>
-<div class="outline-text-3" id="text-2-4">
+<div id="outline-container-org34d55c4" class="outline-3">
+<h3 id="org34d55c4"><span class="section-number-3">3.4</span> Conserved Quantities</h3>
+<div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>In general a Lagrangian with a general K.E. and a potential \(V(q_i)\)</li>
 <li>Can be shown to be \(H=T+V\)</li>
@@ -426,19 +577,19 @@ coordinates.
 </ul>
 </div>
 </div>
-<div id="outline-container-org906de09" class="outline-3">
-<h3 id="org906de09"><span class="section-number-3">2.5</span> Poisson Brackets</h3>
-<div class="outline-text-3" id="text-2-5">
+<div id="outline-container-orgf5d0c47" class="outline-3">
+<h3 id="orgf5d0c47"><span class="section-number-3">3.5</span> Poisson Brackets</h3>
+<div class="outline-text-3" id="text-3-5">
 <ul class="org-ul">
 <li>A function of \(f(q_i,p_i,t)\) has a time-dependence of:</li>
 <li>\(\frac{df}{dt} = \sum\left(\frac{\partial f}{\partial q_i}\dot{q_i}+\frac{\partial f}{\partial p_i}\dot{p_i} \right) + \frac{\partial f}{\partial t}\)</li>
 <li>Make appropiate substitutions with Hamilton's Equations</li>
-<li>\({f,g} = \sum_i\left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial \dot{p_i}}+\frac{\partial f}{\partial p_i}\frac{\partial g}{\partial \dot{q_i}} \right)\)</li>
+<li>\({f,g} = \sum_i\left(\frac{\partial f}{\partial q_i}\frac{\partial g}{\partial{p_i}}+\frac{\partial f}{\partial p_i}\frac{\partial g}{\partial q_i} \right)\)</li>
 </ul>
 </div>
-<div id="outline-container-org7fcfc0a" class="outline-4">
-<h4 id="org7fcfc0a"><span class="section-number-4">2.5.1</span> Properties of Poisson Brackets</h4>
-<div class="outline-text-4" id="text-2-5-1">
+<div id="outline-container-orga2dee5f" class="outline-4">
+<h4 id="orga2dee5f"><span class="section-number-4">3.5.1</span> Properties of Poisson Brackets</h4>
+<div class="outline-text-4" id="text-3-5-1">
 <ul class="org-ul">
 <li>Linear</li>
 <li>Satisfies Jacobi Identity: \(\{\{f,g\},h\}+\{\{h,f\},g\}+\{\{g,h\},f\} =0\)</li>
@@ -447,17 +598,17 @@ coordinates.
 </div>
 </div>
 </div>
-<div id="outline-container-org6317beb" class="outline-3">
-<h3 id="org6317beb"><span class="section-number-3">2.6</span> Phase Space</h3>
-<div class="outline-text-3" id="text-2-6">
+<div id="outline-container-org1194e59" class="outline-3">
+<h3 id="org1194e59"><span class="section-number-3">3.6</span> Phase Space</h3>
+<div class="outline-text-3" id="text-3-6">
 <ul class="org-ul">
 <li>A space that is composed of \(x(t) = (p_i(t),q_i(t))\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org41b80a2" class="outline-3">
-<h3 id="org41b80a2"><span class="section-number-3">2.7</span> Liouville's Theorem</h3>
-<div class="outline-text-3" id="text-2-7">
+<div id="outline-container-org7a955ea" class="outline-3">
+<h3 id="org7a955ea"><span class="section-number-3">3.7</span> Liouville's Theorem</h3>
+<div class="outline-text-3" id="text-3-7">
 <ul class="org-ul">
 <li>The volume of a Hamiltonian system is unchanged (can change shape though)</li>
 <li>With the Divergence Theorem:</li>
@@ -466,13 +617,13 @@ coordinates.
 </div>
 </div>
 </div>
-<div id="outline-container-org93a1941" class="outline-2">
-<h2 id="org93a1941"><span class="section-number-2">3</span> Week 3</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org691e873" class="outline-2">
+<h2 id="org691e873"><span class="section-number-2">4</span> Week 3</h2>
+<div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org4607504" class="outline-3">
-<h3 id="org4607504"><span class="section-number-3">3.1</span> Hamiltonian</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org89220a4" class="outline-3">
+<h3 id="org89220a4"><span class="section-number-3">4.1</span> Hamiltonian</h3>
+<div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li>Is always given in terms of momentum and general coordinate:</li>
 <li>i.e. \(H = H(p_\theta, \theta)\)</li>
@@ -480,18 +631,18 @@ coordinates.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgeafff83" class="outline-3">
-<h3 id="orgeafff83"><span class="section-number-3">3.2</span> Bead on Rotating Loop</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org6f094c9" class="outline-3">
+<h3 id="org6f094c9"><span class="section-number-3">4.2</span> Bead on Rotating Loop</h3>
+<div class="outline-text-3" id="text-4-2">
 <ul class="org-ul">
 <li>Basically an example in using Lagrangian and Hamilton's equation</li>
 <li>Maybe go through it again from time to time</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb617eed" class="outline-3">
-<h3 id="orgb617eed"><span class="section-number-3">3.3</span> Small Oscillations</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-org5e28fd8" class="outline-3">
+<h3 id="org5e28fd8"><span class="section-number-3">4.3</span> Small Oscillations</h3>
+<div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>Consider a small oscillation where the potential is minimum (derivative of V is zero)</li>
 <li>Masses can be related to the generalised coordinate
@@ -516,12 +667,12 @@ coordinates.
 </ul>
 </div>
 </div>
-<div id="outline-container-org0e4775f" class="outline-3">
-<h3 id="org0e4775f"><span class="section-number-3">3.4</span> Carbon Dioxide example</h3>
+<div id="outline-container-org397d122" class="outline-3">
+<h3 id="org397d122"><span class="section-number-3">4.4</span> Carbon Dioxide example</h3>
 </div>
-<div id="outline-container-orga69770a" class="outline-3">
-<h3 id="orga69770a"><span class="section-number-3">3.5</span> Classical Field Theory</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-orgce847a7" class="outline-3">
+<h3 id="orgce847a7"><span class="section-number-3">4.5</span> Classical Field Theory</h3>
+<div class="outline-text-3" id="text-4-5">
 <ul class="org-ul">
 <li>Treat matter as particles lying in a 'mattress'
 <ul class="org-ul">
@@ -538,9 +689,9 @@ coordinates.
 </ul>
 </div>
 </div>
-<div id="outline-container-org6ec5d12" class="outline-3">
-<h3 id="org6ec5d12"><span class="section-number-3">3.6</span> Important formulas:</h3>
-<div class="outline-text-3" id="text-3-6">
+<div id="outline-container-orgf595162" class="outline-3">
+<h3 id="orgf595162"><span class="section-number-3">4.6</span> Important formulas:</h3>
+<div class="outline-text-3" id="text-4-6">
 <ul class="org-ul">
 <li>Lagrangian density:
 <ul class="org-ul">
@@ -554,26 +705,26 @@ coordinates.
 </div>
 </div>
 </div>
-<div id="outline-container-org7ef149c" class="outline-2">
-<h2 id="org7ef149c"><span class="section-number-2">4</span> Week 4</h2>
-<div class="outline-text-2" id="text-4">
+<div id="outline-container-orgdc1ca02" class="outline-2">
+<h2 id="orgdc1ca02"><span class="section-number-2">5</span> Week 4</h2>
+<div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orgfe58edf" class="outline-3">
-<h3 id="orgfe58edf"><span class="section-number-3">4.1</span> ODEs</h3>
-<div class="outline-text-3" id="text-4-1">
+<div id="outline-container-orgb0260e3" class="outline-3">
+<h3 id="orgb0260e3"><span class="section-number-3">5.1</span> ODEs</h3>
+<div class="outline-text-3" id="text-5-1">
 </div>
-<div id="outline-container-org54e17ac" class="outline-4">
-<h4 id="org54e17ac"><span class="section-number-4">4.1.1</span> Coupled DEs</h4>
-<div class="outline-text-4" id="text-4-1-1">
+<div id="outline-container-org1d5e05c" class="outline-4">
+<h4 id="org1d5e05c"><span class="section-number-4">5.1.1</span> Coupled DEs</h4>
+<div class="outline-text-4" id="text-5-1-1">
 <ul class="org-ul">
 <li>Basically if equations are mixed with diff. coordinates</li>
 <li>Like y depends on x and z and vice versa</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd497d54" class="outline-4">
-<h4 id="orgd497d54"><span class="section-number-4">4.1.2</span> Equivalent system of 1st Order ODEs</h4>
-<div class="outline-text-4" id="text-4-1-2">
+<div id="outline-container-orgb29cfea" class="outline-4">
+<h4 id="orgb29cfea"><span class="section-number-4">5.1.2</span> Equivalent system of 1st Order ODEs</h4>
+<div class="outline-text-4" id="text-5-1-2">
 <ul class="org-ul">
 <li>Linear differential equation can be written in the form:</li>
 <li>\(f(\frac{d^n x}{dt^n},...,\frac{dx}{dt},t) = 0\)</li>
@@ -582,8 +733,8 @@ coordinates.
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orge656246"></a>Solving<br />
-<div class="outline-text-5" id="text-4-1-2-1">
+<li><a id="org86a36c9"></a>Solving<br />
+<div class="outline-text-5" id="text-5-1-2-1">
 <ul class="org-ul">
 <li>Any n order differential equation can be written as n first order ODE</li>
 <li>\(y_{i-1} = y_i\) So y equals the second highest order derivative</li>
@@ -591,8 +742,8 @@ coordinates.
 </ul>
 </div>
 </li>
-<li><a id="org3b899de"></a>Examples<br />
-<div class="outline-text-5" id="text-4-1-2-2">
+<li><a id="org51965a7"></a>Examples<br />
+<div class="outline-text-5" id="text-5-1-2-2">
 <ol class="org-ol">
 <li>\(0 = \ddot{x}+\gamma\dot{x}+\omega^2 x\)
 <ul class="org-ul">
@@ -610,9 +761,9 @@ coordinates.
 </li>
 </ol>
 </div>
-<div id="outline-container-orgfbd9bbc" class="outline-4">
-<h4 id="orgfbd9bbc"><span class="section-number-4">4.1.3</span> Existence and Uniqueness</h4>
-<div class="outline-text-4" id="text-4-1-3">
+<div id="outline-container-orgfac1609" class="outline-4">
+<h4 id="orgfac1609"><span class="section-number-4">5.1.3</span> Existence and Uniqueness</h4>
+<div class="outline-text-4" id="text-5-1-3">
 <ul class="org-ul">
 <li>In vector form: \(\dot{x} = g(x,t)\)</li>
 <li>Which is to have a column vector of \(\dot{x_i}\) equal to</li>
@@ -620,8 +771,8 @@ coordinates.
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org63a73cd"></a>Theorem<br />
-<div class="outline-text-5" id="text-4-1-3-1">
+<li><a id="org1a3cd92"></a>Theorem<br />
+<div class="outline-text-5" id="text-5-1-3-1">
 <ul class="org-ul">
 <li>If \(g(x,t)\) and all first order derivatives are continous and
 contain a point \(x_0\)</li>
@@ -630,8 +781,8 @@ contain a point \(x_0\)</li>
 </ul>
 </div>
 </li>
-<li><a id="org182e07b"></a>Breakdown<br />
-<div class="outline-text-5" id="text-4-1-3-2">
+<li><a id="orgee7153a"></a>Breakdown<br />
+<div class="outline-text-5" id="text-5-1-3-2">
 <ul class="org-ul">
 <li>Consider \(\dot{x} = \sqrt{x}\)</li>
 <li>There are infinitely many solutions for initial condition \(x(0)=0\)</li>
@@ -641,25 +792,25 @@ contain a point \(x_0\)</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org4e6fda1" class="outline-4">
-<h4 id="org4e6fda1"><span class="section-number-4">4.1.4</span> Fixed Points</h4>
-<div class="outline-text-4" id="text-4-1-4">
+<div id="outline-container-org1c6354a" class="outline-4">
+<h4 id="org1c6354a"><span class="section-number-4">5.1.4</span> Fixed Points</h4>
+<div class="outline-text-4" id="text-5-1-4">
 <ul class="org-ul">
 <li>Fixed points occur when \(\dot{x}|_x-x_f = 0\)</li>
 <li>Which is when the derivative equals zero</li>
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org3b14ac8"></a>Logistics Equation<br />
-<div class="outline-text-5" id="text-4-1-4-1">
+<li><a id="org72e237b"></a>Logistics Equation<br />
+<div class="outline-text-5" id="text-5-1-4-1">
 <ul class="org-ul">
 <li>Population growth model or rabbits:</li>
 <li>\(\dot{x} = x(a-bx)\)</li>
 </ul>
 </div>
 </li>
-<li><a id="org64d4f16"></a>Solving for higher order<br />
-<div class="outline-text-5" id="text-4-1-4-2">
+<li><a id="org13c5862"></a>Solving for higher order<br />
+<div class="outline-text-5" id="text-5-1-4-2">
 <ol class="org-ol">
 <li>Begin with writing out the derivative as something something
 equation as matrix</li>
@@ -680,21 +831,21 @@ that substitution with \(G\) creates the linear set of ODEs</li>
 </div>
 </div>
 </div>
-<div id="outline-container-orge2323aa" class="outline-2">
-<h2 id="orge2323aa"><span class="section-number-2">5</span> Week 5</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org633ba37" class="outline-2">
+<h2 id="org633ba37"><span class="section-number-2">6</span> Week 5</h2>
+<div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orge459130" class="outline-3">
-<h3 id="orge459130"><span class="section-number-3">5.1</span> Jordan Form</h3>
-<div class="outline-text-3" id="text-5-1">
+<div id="outline-container-org415d568" class="outline-3">
+<h3 id="org415d568"><span class="section-number-3">6.1</span> Jordan Form</h3>
+<div class="outline-text-3" id="text-6-1">
 <ul class="org-ul">
 <li>\(J = M^{-1}AM\)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org0e8e35f" class="outline-3">
-<h3 id="org0e8e35f"><span class="section-number-3">5.2</span> Rabbits growth</h3>
-<div class="outline-text-3" id="text-5-2">
+<div id="outline-container-org9fbe4cc" class="outline-3">
+<h3 id="org9fbe4cc"><span class="section-number-3">6.2</span> Rabbits growth</h3>
+<div class="outline-text-3" id="text-6-2">
 <ol class="org-ol">
 <li>Identify fixed points (set x=0 and y=0)</li>
 <li>First equation is \(g_1\), second is \(g_2\)</li>
@@ -708,13 +859,13 @@ that substitution with \(G\) creates the linear set of ODEs</li>
 </div>
 </div>
 
-<div id="outline-container-orgf6d658f" class="outline-2">
-<h2 id="orgf6d658f"><span class="section-number-2">6</span> Week 6</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org5ea5a00" class="outline-2">
+<h2 id="org5ea5a00"><span class="section-number-2">7</span> Week 6</h2>
+<div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org5cb2d17" class="outline-3">
-<h3 id="org5cb2d17"><span class="section-number-3">6.1</span> Stability of a point in phase space</h3>
-<div class="outline-text-3" id="text-6-1">
+<div id="outline-container-org5b6780a" class="outline-3">
+<h3 id="org5b6780a"><span class="section-number-3">7.1</span> Stability of a point in phase space</h3>
+<div class="outline-text-3" id="text-7-1">
 <ol class="org-ol">
 <li>Asymptotic stability
 When nearby points flow to the point x<sub>f</sub></li>
@@ -736,9 +887,9 @@ fixed point after \(t\to\infty\)</li>
 </div>
 </div>
 
-<div id="outline-container-org7cdadbb" class="outline-3">
-<h3 id="org7cdadbb"><span class="section-number-3">6.2</span> Liapunov Stability Theorem</h3>
-<div class="outline-text-3" id="text-6-2">
+<div id="outline-container-org99868f7" class="outline-3">
+<h3 id="org99868f7"><span class="section-number-3">7.2</span> Liapunov Stability Theorem</h3>
+<div class="outline-text-3" id="text-7-2">
 <p>
 Consider a system \(\dot{x} = g(x)\) with a fixed point at the
 origin. If there exists a function \(V(x)\) defined in a region \(R\)
@@ -773,9 +924,9 @@ Note: FP is global stable. Attrats all trajectories.
 </div>
 </div>
 
-<div id="outline-container-orgceb97be" class="outline-3">
-<h3 id="orgceb97be"><span class="section-number-3">6.3</span> Limit Cycles</h3>
-<div class="outline-text-3" id="text-6-3">
+<div id="outline-container-orge248037" class="outline-3">
+<h3 id="orge248037"><span class="section-number-3">7.3</span> Limit Cycles</h3>
+<div class="outline-text-3" id="text-7-3">
 <p>
 Instead of converging at fixed points, the trajectories may converge
 to a closed curve or periodic orbits. For a trajectory \(\Gamma\) and a
@@ -794,9 +945,9 @@ See page 80 for example on <i>van der Pol oscillator</i>.
 </div>
 </div>
 
-<div id="outline-container-org7e9da1c" class="outline-3">
-<h3 id="org7e9da1c"><span class="section-number-3">6.4</span> Poincare Bendixson Theorem</h3>
-<div class="outline-text-3" id="text-6-4">
+<div id="outline-container-orgcd65356" class="outline-3">
+<h3 id="orgcd65356"><span class="section-number-3">7.4</span> Poincare Bendixson Theorem</h3>
+<div class="outline-text-3" id="text-7-4">
 <p>
 Consider a system \(\dot{x} = g(x)\). Suppose that:
 </p>
@@ -820,9 +971,9 @@ This theorem is used to prove the existence of limit cycles.
 </div>
 </div>
 
-<div id="outline-container-org4a8620b" class="outline-3">
-<h3 id="org4a8620b"><span class="section-number-3">6.5</span> Linearisation (Hartman-Grobman) Theorem</h3>
-<div class="outline-text-3" id="text-6-5">
+<div id="outline-container-orgb8770b5" class="outline-3">
+<h3 id="orgb8770b5"><span class="section-number-3">7.5</span> Linearisation (Hartman-Grobman) Theorem</h3>
+<div class="outline-text-3" id="text-7-5">
 <p>
 As long as the eigenvalue of the Jacobian as a nonzero real component,
 the phase space portrait close to the fixed point remains
@@ -839,9 +990,9 @@ The phase portrait remains the same.
 </div>
 </div>
 
-<div id="outline-container-org745cb1e" class="outline-3">
-<h3 id="org745cb1e"><span class="section-number-3">6.6</span> Symmetry</h3>
-<div class="outline-text-3" id="text-6-6">
+<div id="outline-container-orga831e86" class="outline-3">
+<h3 id="orga831e86"><span class="section-number-3">7.6</span> Symmetry</h3>
+<div class="outline-text-3" id="text-7-6">
 <p>
 Symmetrical systems remain the same after the transformation \(t\to -t,
 y\to -y\). All trajecotries of the full non-linear system are closed. 
@@ -850,9 +1001,9 @@ y\to -y\). All trajecotries of the full non-linear system are closed.
 </div>
 
 
-<div id="outline-container-orgdd56061" class="outline-3">
-<h3 id="orgdd56061"><span class="section-number-3">6.7</span> Additional Examples from lectures:</h3>
-<div class="outline-text-3" id="text-6-7">
+<div id="outline-container-org4a15035" class="outline-3">
+<h3 id="org4a15035"><span class="section-number-3">7.7</span> Additional Examples from lectures:</h3>
+<div class="outline-text-3" id="text-7-7">
 <ol class="org-ol">
 <li>System \(\dot{x} = 0, \dot{y} = -y\)</li>
 </ol>
@@ -902,13 +1053,13 @@ Use Polar coordinates.
 </div>
 </div>
 
-<div id="outline-container-org25576c8" class="outline-2">
-<h2 id="org25576c8"><span class="section-number-2">7</span> Week 7</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-org4e942c2" class="outline-2">
+<h2 id="org4e942c2"><span class="section-number-2">8</span> Week 7</h2>
+<div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org04f8159" class="outline-3">
-<h3 id="org04f8159"><span class="section-number-3">7.1</span> Conserved quantities</h3>
-<div class="outline-text-3" id="text-7-1">
+<div id="outline-container-org45499c2" class="outline-3">
+<h3 id="org45499c2"><span class="section-number-3">8.1</span> Conserved quantities</h3>
+<div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>Systems have conserved quantities, and for 2D systems: \[
       \frac{d}{dt}Q(x,y) = \frac{\partial Q}{\partial x} \dot{x} +
@@ -919,9 +1070,9 @@ Use Polar coordinates.
 </div>
 </div>
 
-<div id="outline-container-org051ffca" class="outline-3">
-<h3 id="org051ffca"><span class="section-number-3">7.2</span> Fist integrals and conservative system</h3>
-<div class="outline-text-3" id="text-7-2">
+<div id="outline-container-orga9e187e" class="outline-3">
+<h3 id="orga9e187e"><span class="section-number-3">8.2</span> Fist integrals and conservative system</h3>
+<div class="outline-text-3" id="text-8-2">
 <ul class="org-ul">
 <li>The first integral of differential equations is a function that
 is constant on a given trajectory</li>
@@ -933,9 +1084,9 @@ is constant on a given trajectory</li>
 <li>Reject trivial solutions</li>
 </ul>
 </div>
-<div id="outline-container-org0167dfc" class="outline-4">
-<h4 id="org0167dfc"><span class="section-number-4">7.2.1</span> Example 1</h4>
-<div class="outline-text-4" id="text-7-2-1">
+<div id="outline-container-orgae2bbfd" class="outline-4">
+<h4 id="orgae2bbfd"><span class="section-number-4">8.2.1</span> Example 1</h4>
+<div class="outline-text-4" id="text-8-2-1">
 \begin{align*}
 \dot{x} &= \frac{p}{m}\\
 \dot{p} &= -\frac{dV(x)}{dx}\\
@@ -953,18 +1104,18 @@ quantity.
 </div>
 
 
-<div id="outline-container-org3e6570d" class="outline-4">
-<h4 id="org3e6570d"><span class="section-number-4">7.2.2</span> Example 2</h4>
-<div class="outline-text-4" id="text-7-2-2">
+<div id="outline-container-org963c68f" class="outline-4">
+<h4 id="org963c68f"><span class="section-number-4">8.2.2</span> Example 2</h4>
+<div class="outline-text-4" id="text-8-2-2">
 <p>
 See page 87, on the hyperbolic surface / linear saddle point
 </p>
 </div>
 </div>
 
-<div id="outline-container-org553f1c2" class="outline-4">
-<h4 id="org553f1c2"><span class="section-number-4">7.2.3</span> Example 3</h4>
-<div class="outline-text-4" id="text-7-2-3">
+<div id="outline-container-orge125789" class="outline-4">
+<h4 id="orge125789"><span class="section-number-4">8.2.3</span> Example 3</h4>
+<div class="outline-text-4" id="text-8-2-3">
 \begin{align*}
 \dot{x}&=-x\\
 \dot{y}&=-y\\
@@ -974,9 +1125,9 @@ Q(x,y) &= \frac{y}{x}
 </div>
 </div>
 
-<div id="outline-container-orga2d1719" class="outline-4">
-<h4 id="orga2d1719"><span class="section-number-4">7.2.4</span> Questions</h4>
-<div class="outline-text-4" id="text-7-2-4">
+<div id="outline-container-org4110d03" class="outline-4">
+<h4 id="org4110d03"><span class="section-number-4">8.2.4</span> Questions</h4>
+<div class="outline-text-4" id="text-8-2-4">
 <ul class="org-ul">
 <li>How to go from the conserved quantity to the trajectory?</li>
 <li>i.e. "Analytically determine the shape of trajectories"</li>
@@ -984,12 +1135,12 @@ Q(x,y) &= \frac{y}{x}
 </div>
 </div>
 </div>
-<div id="outline-container-orged44510" class="outline-3">
-<h3 id="orged44510"><span class="section-number-3">7.3</span> Theorem: No attracting or repelling fixed points in conservative systems</h3>
+<div id="outline-container-orgbf6040b" class="outline-3">
+<h3 id="orgbf6040b"><span class="section-number-3">8.3</span> Theorem: No attracting or repelling fixed points in conservative systems</h3>
 </div>
-<div id="outline-container-org4c7ffb7" class="outline-3">
-<h3 id="org4c7ffb7"><span class="section-number-3">7.4</span> First Integrals and Trajectories</h3>
-<div class="outline-text-3" id="text-7-4">
+<div id="outline-container-org1772fde" class="outline-3">
+<h3 id="org1772fde"><span class="section-number-3">8.4</span> First Integrals and Trajectories</h3>
+<div class="outline-text-3" id="text-8-4">
 <ol class="org-ol">
 <li>Fixed points are stationary points of the conserved quantity</li>
 <li>Stationary points which are maxima or minima must be surrounded
@@ -1009,9 +1160,9 @@ We are now in a position to find detailed form of the solutions for various non-
 </div>
 </div>
 
-<div id="outline-container-org3c90f0f" class="outline-3">
-<h3 id="org3c90f0f"><span class="section-number-3">7.5</span> Nonlinear Pendulum</h3>
-<div class="outline-text-3" id="text-7-5">
+<div id="outline-container-orgf898c10" class="outline-3">
+<h3 id="orgf898c10"><span class="section-number-3">8.5</span> Nonlinear Pendulum</h3>
+<div class="outline-text-3" id="text-8-5">
 \begin{align*}
 T &= \frac12 ml^2\dot{\theta}^2\\
 V &= -mgl\cos{\theta}\\
@@ -1020,13 +1171,13 @@ L = T-V &= \frac12 ml^2\dot{\theta}^2 + mgl\cos{\theta}
 </div>
 </div>
 </div>
-<div id="outline-container-org3037951" class="outline-2">
-<h2 id="org3037951"><span class="section-number-2">8</span> Week 8</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-org86a055e" class="outline-2">
+<h2 id="org86a055e"><span class="section-number-2">9</span> Week 8</h2>
+<div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-orge19359c" class="outline-3">
-<h3 id="orge19359c"><span class="section-number-3">8.1</span> Bifurcations</h3>
-<div class="outline-text-3" id="text-8-1">
+<div id="outline-container-org35c1b95" class="outline-3">
+<h3 id="org35c1b95"><span class="section-number-3">9.1</span> Bifurcations</h3>
+<div class="outline-text-3" id="text-9-1">
 <ul class="org-ul">
 <li>System of differential equations contain parameter \(a\)</li>
 <li>Bifurcation occurs when critical value \(a=a_c\) causes solutions
@@ -1037,9 +1188,9 @@ definition unstable</li>
 </div>
 </div>
 
-<div id="outline-container-org37ff285" class="outline-3">
-<h3 id="org37ff285"><span class="section-number-3">8.2</span> Analysis</h3>
-<div class="outline-text-3" id="text-8-2">
+<div id="outline-container-orge294714" class="outline-3">
+<h3 id="orge294714"><span class="section-number-3">9.2</span> Analysis</h3>
+<div class="outline-text-3" id="text-9-2">
 <ol class="org-ol">
 <li>Simple plotting of say \(\dot{x} = a-x^2\)</li>
 <li>Expansion of \(x = \sqrt{a}+\delta\)
@@ -1051,9 +1202,9 @@ definition unstable</li>
 </div>
 </div>
 
-<div id="outline-container-org5b3be07" class="outline-3">
-<h3 id="org5b3be07"><span class="section-number-3">8.3</span> Bifurcation Diagram</h3>
-<div class="outline-text-3" id="text-8-3">
+<div id="outline-container-org512ddcd" class="outline-3">
+<h3 id="org512ddcd"><span class="section-number-3">9.3</span> Bifurcation Diagram</h3>
+<div class="outline-text-3" id="text-9-3">
 <ul class="org-ul">
 <li>Plots location of fixed points as a function of \(a\)</li>
 <li>Dotted/dashed lines are unstable</li>
@@ -1061,9 +1212,9 @@ definition unstable</li>
 </div>
 </div>
 
-<div id="outline-container-org57989f0" class="outline-3">
-<h3 id="org57989f0"><span class="section-number-3">8.4</span> Pitchfork Bifurcation</h3>
-<div class="outline-text-3" id="text-8-4">
+<div id="outline-container-org6832ca6" class="outline-3">
+<h3 id="org6832ca6"><span class="section-number-3">9.4</span> Pitchfork Bifurcation</h3>
+<div class="outline-text-3" id="text-9-4">
 <ul class="org-ul">
 <li>\(\dot{x} = ax-x^3\)</li>
 <li>-&lt;- resembles a pitchfork</li>
@@ -1077,9 +1228,9 @@ definition unstable</li>
 </div>
 </div>
 
-<div id="outline-container-org2b17d25" class="outline-3">
-<h3 id="org2b17d25"><span class="section-number-3">8.5</span> General Comments</h3>
-<div class="outline-text-3" id="text-8-5">
+<div id="outline-container-org1836a70" class="outline-3">
+<h3 id="org1836a70"><span class="section-number-3">9.5</span> General Comments</h3>
+<div class="outline-text-3" id="text-9-5">
 <ul class="org-ul">
 <li>Three cases cover generic, qualitatively different bifurcations</li>
 <li>Conservation: N(stable fixed points) - N(unstable fixed points) remain constant</li>
@@ -1087,13 +1238,13 @@ definition unstable</li>
 </div>
 </div>
 
-<div id="outline-container-org5a98987" class="outline-3">
-<h3 id="org5a98987"><span class="section-number-3">8.6</span> Bifurcations in 2D</h3>
+<div id="outline-container-orgd9959b9" class="outline-3">
+<h3 id="orgd9959b9"><span class="section-number-3">9.6</span> Bifurcations in 2D</h3>
 </div>
 
-<div id="outline-container-orgdd280a8" class="outline-3">
-<h3 id="orgdd280a8"><span class="section-number-3">8.7</span> Hopf Bifurcation</h3>
-<div class="outline-text-3" id="text-8-7">
+<div id="outline-container-org415c85d" class="outline-3">
+<h3 id="org415c85d"><span class="section-number-3">9.7</span> Hopf Bifurcation</h3>
+<div class="outline-text-3" id="text-9-7">
 <ul class="org-ul">
 <li>The appearance of a stable limit cycle is a supercritical HB</li>
 <li></li>
@@ -1102,13 +1253,13 @@ definition unstable</li>
 </div>
 </div>
 
-<div id="outline-container-org1f87f64" class="outline-2">
-<h2 id="org1f87f64"><span class="section-number-2">9</span> Week 9 &amp; 10</h2>
-<div class="outline-text-2" id="text-9">
+<div id="outline-container-org8d6df91" class="outline-2">
+<h2 id="org8d6df91"><span class="section-number-2">10</span> Week 9 &amp; 10</h2>
+<div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-orga90f240" class="outline-3">
-<h3 id="orga90f240"><span class="section-number-3">9.1</span> Lorenz Equations</h3>
-<div class="outline-text-3" id="text-9-1">
+<div id="outline-container-org3386607" class="outline-3">
+<h3 id="org3386607"><span class="section-number-3">10.1</span> Lorenz Equations</h3>
+<div class="outline-text-3" id="text-10-1">
 \begin{align*}
 \dot{x} &= \sigma(y-x)\\
 \dot{y} &= rx - y - xz\\
@@ -1133,9 +1284,9 @@ Full eigenvalue equation:
 </div>
 </div>
 
-<div id="outline-container-orge1b121e" class="outline-3">
-<h3 id="orge1b121e"><span class="section-number-3">9.2</span> Discrete Maps</h3>
-<div class="outline-text-3" id="text-9-2">
+<div id="outline-container-org8378f40" class="outline-3">
+<h3 id="org8378f40"><span class="section-number-3">10.2</span> Discrete Maps</h3>
+<div class="outline-text-3" id="text-10-2">
 <ul class="org-ul">
 <li>If \(f'(x^*) >1\) deviation from fixed point decreases with every
 iteration, <b>stable fixed point</b></li>
@@ -1146,10 +1297,24 @@ iteration, <b>stable fixed point</b></li>
 </div>
 </div>
 </div>
+
+
+<div id="outline-container-org2419bb3" class="outline-2">
+<h2 id="org2419bb3"><span class="section-number-2">11</span> Additional</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+From the problem sheet1:
+</p>
+
+<p>
+\[\frac{d}{dt}\left(\frac{\partial x}{\partial q_i} \right) = \sum&\^n_{j=1}\frac{\partial^2}{\partial q_j \partial q_i}\dot{q}_j + \frac{\partial^2 x}{\partial t \partial q_i}\]
+</p>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Kelvin</p>
-<p class="date">Created: 2022-05-09 Mon 18:50</p>
+<p class="date">Created: 2022-05-20 Fri 22:14</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
